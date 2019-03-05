@@ -1,0 +1,78 @@
+<form name="form" role="form" class="form-horizontal form-validation">
+    <div class="modal-header">
+        <h3 class="modal-title text-center">新增账户</h3>
+    </div>
+    <div class="modal-body">
+
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>账户名</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="account.username"
+                       required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>密码</label>
+            </div>
+            <div class="col-md-9">
+                <input type="password" class="form-control" ng-model="account.password" required/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>请再次输入密码</label>
+            </div>
+            <div class="col-md-9">
+                <input type="password" placeholder="再次输入" class="form-control" ng-model="repassword" required/>
+            </div>
+                <span style="color: red" ng-show="repassword != account.password">两次密码输入不一致</span>
+
+        </div>
+
+       <!-- <div class="form-group">
+            <label class="col-sm-3 control-label text-left">所属App</label>
+            <div class="col-sm-9">
+                <ui-select ng-model="AppIds.selected" theme="bootstrap">
+                    <ui-select-match placeholder="请选择APP……">
+                        <span ng-bind="$select.selected.name"></span>
+                        &lt;!&ndash;这种写法不会默认不会显示出placeholder&ndash;&gt;
+                        &lt;!&ndash;{{$select.selected.name}}&ndash;&gt;
+                    </ui-select-match>
+                    <ui-select-choices repeat="item in AppIds | filter: $select.search">
+                        <div ng-bind-html="item.name | highlight: $select.search"></div>
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+        </div>-->
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label text-left">角色</label>
+            <div class="col-sm-9">
+                <ui-select ng-model="Roles.selected" theme="bootstrap">
+                    <ui-select-match placeholder="请选择角色……">
+                        <span ng-bind="$select.selected.roleName"></span>
+                        <!--这种写法不会默认不会显示出placeholder-->
+                        <!--{{$select.selected.name}}-->
+                    </ui-select-match>
+                    <ui-select-choices repeat="item in Roles | filter: $select.search">
+                        <div ng-bind-html="item.roleName | highlight: $select.search"></div>
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-disabled="form.$invalid" ng-click="accountVm.submit()">提交
+        </button>
+        <button class="btn btn-warning" type="button" ng-click="accountVm.cancel()">取消</button>
+    </div>
+
+</form>

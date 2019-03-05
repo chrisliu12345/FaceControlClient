@@ -1,0 +1,245 @@
+<link rel="stylesheet" href="../../../datatime/timepicker/css/bootstrap-datetimepicker.min.css">
+<script src="../../../datatime/timepicker/bootstrap-datetimepicker.js"></script>
+<script src="../../../datatime/timepicker/bootstrap-datetimepicker.fr.js"></script><!--
+    <div class="container" >
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="panel panel-default" >
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <ul class="nav nav-pills pull-right">
+                                <li style=" padding-top:4px; padding-right:4px">
+                                    <button class="btn  btn-info " ng-click="viewNow()"><i
+                                            class="icon-info"></i>查看当前布控设置
+                                    </button>
+
+                                </li>
+
+                            </ul>
+                            布控规则
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <form name="form" role="form" class="form-horizontal form-validation">
+
+                            <div class="form-group">
+                                <div class="col-md-1">
+                                    <label>工作日:</label>
+                                </div>
+
+                                <div class="col-md-9">
+                                    星期一<input type="checkbox" id="1" ng-click="updateedSelect($event,1)" name="星期一"ng-model="$parent.one" style="margin: 0px 10px ">
+                                    星期二<input type="checkbox" id="2" ng-click="updateedSelect($event,2)" name="星期二" ng-model="$parent.two" style="margin: 0px 10px ">
+                                    星期三<input type="checkbox" id="3" ng-click="updateedSelect($event,3)" name="星期三" ng-model="$parent.three" style="margin: 0px 10px ">
+                                    星期四<input type="checkbox" id="4" ng-click="updateedSelect($event,4)" name="星期四" ng-model="$parent.four" style="margin: 0px 10px">
+                                    星期五<input type="checkbox" id="5" ng-click="updateedSelect($event,5)" name="星期五" ng-model="$parent.five" style="margin: 0px 10px ">
+                                    星期六<input type="checkbox" id="6" ng-click="updateedSelect($event,4)" name="星期六" ng-model="$parent.six" style="margin: 0px 10px">
+                                    星期日<input type="checkbox" id="7" ng-click="updateedSelect($event,5)" name="星期日" ng-model="$parent.seven" style="margin: 0px 10px ">
+                                </div>
+                            </div>
+                            <div  class="form-group" style="float:left; display:inline;">
+                                <div class="col-md-4">
+                                    <label style="width: auto;margin: 5px 0px">上班时间:</label>
+                                </div>
+                                <div ng-model='timepickerTest1' ng-time-d
+                                     class="input-group date form_time col-md-8" data-date=""
+                                     data-date-format="hh:ii" data-link-field="dtp_input1"
+                                     data-link-format="hh:ii">
+                                    <input class="form-control" size="16" type="text" value="" ng-model="$parent.StartTime">
+
+                                    <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-remove"></span></span>
+                                    <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-time"></span></span>
+                                </div>
+                                <input type="hidden" id="dtp_input1" value=""/><br/>
+                            </div>
+
+                            <div class="form-group"  style="float:left; margin: 0px 60px">
+                                <div class="col-md-4">
+                                    <label  style="width: auto;margin: 5px 0px" >下班时间:</label>
+                                </div>
+                                <div ng-model='timepickerTest2' ng-time-d
+                                     class="input-group date form_time col-md-8" data-date=""
+                                     data-date-format="hh:ii" data-link-field="dtp_input2"
+                                     data-link-format="hh:ii">
+                                    <input class="form-control" size="16" type="text" value="" ng-model="$parent.EndTime">
+                                    <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-remove"></span></span>
+                                    <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-time"></span></span>
+                                </div>
+                                <input type="hidden" id="dtp_input2" value=""/><br/>
+                            </div>
+
+
+                            <div class="form-group">
+                            </div>
+
+                            <div  class="form-group" style="float:left; display:inline">
+                                <div class="col-md-4">
+                                    <label style="width: auto;margin: 5px 0px" >午休开始:</label>
+                                </div>
+                                <div ng-model='timepickerTest3' ng-time-d
+                                     class="input-group date form_time col-md-8" data-date=""
+                                     data-date-format="hh:ii" data-link-field="dtp_input3"
+                                     data-link-format="hh:ii">
+                                    <input class="form-control" size="16" type="text" value="" ng-model="$parent.StartRestTime">
+                                    <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-remove"></span></span>
+                                    <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-time"></span></span>
+                                </div>
+                                <input type="hidden" id="dtp_input3" value=""/><br/>
+                            </div>
+
+                            <div class="form-group"  style="float:left; display:inline;margin: 0px 60px">
+                                <div class="col-md-4">
+                                    <label  style="width: auto;margin: 5px 0px"  >午休结束:</label>
+                                </div>
+                                <div ng-model='timepickerTest4' ng-time-d
+                                     class="input-group date form_time col-md-8" data-date=""
+                                     data-date-format="hh:ii" data-link-field="dtp_input4"
+                                     data-link-format="hh:ii">
+                                    <input class="form-control" size="16" type="text" value="" ng-model="$parent.EndRestTime">
+                                    <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-remove"></span></span>
+                                    <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-time"></span></span>
+                                </div>
+                                <input type="hidden" id="dtp_input4" value=""/><br/>
+                            </div>
+                            <div class="form-group">
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-2">
+                                    <label>当前法定节假日表导入:</label>
+                                </div>
+
+                                <div class="col-md-9">
+                                   <input type="file" nv-file-select  uploader="$parent.uploader"/>
+                                    <input name="token" type="hidden" ng-model="$parent.token" maxlength="1000">
+                                    <br>
+                                    <a href="/excelFile/file/法定节假日表.xlsx" download="法定节假日表.xlsx"><h5
+                                    ><span class="label label-warning">点击下载《节假日表》模板</span></h5></a>
+                                </div>
+                            </div>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="form-group">
+                                            <div class="col-md-4">
+                                                <label  style="width: auto;margin: 5px 0px">上班打卡晚于：</label>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" ng-model="$parent.StartWrok"
+                                                       required>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label  style="width: auto;margin: 5px 0px">分钟内不记为迟到</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <br>
+                                        <div class="form-group">
+                                            <div class="col-md-4">
+                                                <label  style="width: auto;margin: 5px 0px">下班打卡早于：</label>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" ng-model="$parent.EndWork"
+                                                       required>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label  style="width: auto;margin: 5px 0px">分钟以上记为早退</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <br>
+                                        <div class="form-group">
+                                            <div class="col-md-4">
+                                                <label  style="width: auto;margin: 5px 0px">不在岗时间超过：</label>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" ng-model="$parent.NoWork"
+                                                       required>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label  style="width: auto;margin: 5px 0px">分钟以上记为旷工</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <br>
+                                        <div  class="form-group" >
+                                            <div class="col-md-4">
+                                                <label style="width: auto;margin: 5px 0px">加班起始时间:</label>
+                                            </div>
+                                            <div ng-model='timepickerTest5' ng-time-d
+                                                 class="input-group date form_time col-md-6" data-date=""
+                                                 data-date-format="hh:ii" data-link-field="dtp_input5"
+                                                 data-link-format="hh:ii" >
+                                                <input class="form-control" size="16" type="text" value="" ng-model="$parent.StartAddWorkTime" style="margin: 0px 15px 0px 15px">
+                                                <span class="input-group-addon" ><span
+                                                        class="glyphicon glyphicon-remove" style="margin: 0px 0px 0px 10px"></span></span>
+                                                <span class="input-group-addon"><span
+                                                        class="glyphicon glyphicon-time"></span></span>
+                                            </div>
+                                            <input type="hidden" id="dtp_input5" value=""/><br/>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <div align="right" style="margin: 0px 50px">
+                                <button type="button" class="btn btn-lg btn-primary" ng-click="uploadFileCode()">保存</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        布控地点设置
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="col-md-2">
+                            <label>添加布控地点：</label>
+                        </div>
+
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" ng-model="$parent.camLocation" />
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn  btn-primary" ng-click="addCameraLocation()">添加</button>
+                           <!-- <button type="button" class="btn  btn-info" ng-click="exportCameraLocation()">布控地点导出</button>-->
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+    <!--<div class="jumbotron" >
+
+    </div>
+</div>

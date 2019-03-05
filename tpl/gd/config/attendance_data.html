@@ -1,0 +1,157 @@
+<link rel="stylesheet" href="../../../datatime/timepicker/css/bootstrap-datetimepicker.min.css">
+<script src="../../../datatime/timepicker/bootstrap-datetimepicker.js"></script>
+<script src="../../../datatime/timepicker/bootstrap-datetimepicker.fr.js"></script>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        数据下载
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <form name="form" role="form" class="form-horizontal form-validation">
+
+
+                        <div class="form-group" style="margin: 0px 0px 0px 60px">
+                            <div class="col-md-1">
+                                <label style="width: auto;margin: 5px 0px">组:</label>
+                            </div>
+
+                            <div class="col-md-4">
+                               <!-- <ui-select multiple ng-model="$parent.orgs.group" theme="bootstrap" ng-change="checkName()">
+                                    <ui-select-match placeholder="请选择部门...">{{$item.orgName}}</ui-select-match>
+                                    <ui-select-choices repeat="item in groups | filter: $select.search">
+                                        <div ng-bind-html="item.parentName | highlight: $select.search"></div>
+                                        <small ng-bind-html="item.orgName | highlight: $select.search"></small>
+                                    </ui-select-choices>
+                                </ui-select>-->
+                                <select ng-model="$parent.orgsId" class="form-control" ng-change="checkName()">
+                                    <option ng-repeat="its in groups" value="{{its.id}}">({{its.parentName}}){{its.orgName}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group" style="margin: 0px 0px 0px 60px">
+                            <div class="col-md-1">
+                                <label style="width: auto;margin: 5px 0px">人员:</label>
+                            </div>
+
+                            <div class="col-md-4">
+                                <select ng-model="$parent.Name" class="form-control" >
+                                    <option ng-repeat="x in namelist" value="{{x.CollectId}}">{{x.realName}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group"></div>
+                        <div class="form-group" style="float:left; margin: 0px 60px">
+                            <div class="col-md-4">
+                                <label style="width: auto;margin: 5px 0px">开始日期:</label>
+                            </div>
+                            <div ng-model='timepickerTest10' ng-time-e
+                                 class="input-group date form_date col-md-8" data-date=""
+                                 data-date-format="yyyy-MM-dd" data-link-field="dtp_input20"
+                                 data-link-format="yyyy-mm-dd">
+                                <input class="form-control" size="16" type="text" value="" ng-model="$parent.StartDate">
+                                <span class="input-group-addon"><span
+                                        class="glyphicon glyphicon-remove"></span></span>
+                                <span class="input-group-addon"><span
+                                        class="glyphicon glyphicon-calendar"></span></span>
+                            </div>
+                            <input type="hidden" id="dtp_input10" value=""/><br/>
+                        </div>
+
+
+                        <div class="form-group" style="float:left; margin: 0px 60px">
+                            <div class="col-md-4">
+                                <label style="width: auto;margin: 5px 0px">终止日期:</label>
+                            </div>
+                            <div ng-model='timepickerTest20' ng-time-e
+                                 class="input-group date form_date col-md-8" data-date=""
+                                 data-date-format="yyyy-MM-dd" data-link-field="dtp_input20"
+                                 data-link-format="yyyy-mm-dd">
+                                <input class="form-control" size="16" type="text" value="" ng-model="$parent.EndDate">
+                                <span class="input-group-addon"><span
+                                        class="glyphicon glyphicon-remove"></span></span>
+                                <span class="input-group-addon"><span
+                                        class="glyphicon glyphicon-calendar"></span></span>
+                            </div>
+                            <input type="hidden" id="dtp_input20" value=""/><br/>
+
+                        </div>
+
+                    </form>
+
+                </div>
+                <div align="right" style="margin: 20px 100px">
+                    <button type="button" class="btn btn-primary" ng-click="dataSave()">下载</button>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        数据清除
+                    </h3>
+                </div>
+                <div class="panel-body">
+
+
+                    <!--<div class="col-md-3">
+                        <input type="text" class="form-control" ng-model="$parent.CleanData"
+                               required>
+                    </div>-->
+
+                    <div class="form-group" style="float:left; margin: 0px 60px">
+                        <div class="col-md-4">
+                            <label style="width: auto;margin: 5px 0px">清除：</label>
+                        </div>
+                        <div ng-model='timepickerTest12' ng-time-e
+                             class="input-group date form_date_month col-md-8" data-date=""
+                             data-date-format="yyyy" data-link-field="dtp_input12"
+                             data-link-format="yyyy">
+                            <input class="form-control" size="16" type="text" value="" ng-model="$parent.CleanData">
+                            <span class="input-group-addon"><span
+                                    class="glyphicon glyphicon-remove"></span></span>
+                            <span class="input-group-addon"><span
+                                    class="glyphicon glyphicon-calendar"></span></span>
+
+                        </div>
+                        <input type="hidden" id="dtp_input12" value=""/><br/>
+
+                    </div>
+                    <div class="col-md-3">
+                        <label style="width: auto;margin: 5px 0px">年的布控数据</label>
+                    </div>
+
+
+                    <div class="form-group" style="margin: 0px 0px 0px 100px">
+                        <div class="col-md-2">
+                            <button type="button" class="btn  btn-primary" ng-click="submit2()">执行</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</div>
+<!--<div class="jumbotron" >
+
+</div>
+</div>

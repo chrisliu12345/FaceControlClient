@@ -1,0 +1,113 @@
+<link rel="stylesheet" href="../../../datatime/timepicker/css/bootstrap-datetimepicker.min.css">
+
+<script src="../../../datatime/timepicker/bootstrap-datetimepicker.js"></script>
+<script src="../../../datatime/timepicker/bootstrap-datetimepicker.fr.js"></script>
+
+
+<!--<script src="/js/jquery-1.11.0.min.js"></script>-->
+
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
+    app.settings.asideFolded = false;
+    app.settings.asideDock = false;
+  " >
+    <div class="wrapper-md">
+        <div class="col-md-1">
+
+        </div>
+        <div class="panel panel-default col-md-12">
+            <div class="panel-heading" style="height: 50px;white-space: nowrap;">
+
+
+
+                <ul class="nav  nav-pills pull-right">
+                    <li style=" padding-top:4px; padding-right:4px;text-align: center;" >
+                        <table>
+                            <tr>
+                                <td style="float: left">
+                                    <div class="form-group" >
+                                        <div class="col-md-4">
+                                            <label style="width: auto;margin: 5px 0px" >摄像机名称:</label>
+                                        </div>
+
+                                        <div class="col-md-7">
+                                            <select ng-model="$parent.CameraName" class="form-control">
+                                                <option ng-repeat="x in cameras" value="{{x.CamerId}}-{{x.TaskType}}">{{x.temp}}</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+                                </td>
+                                <td>
+                                    <div class="form-group" >
+                                        <div class="col-md-4">
+                                            <label  style="width: auto;margin: 5px 0px" >日期:</label>
+                                        </div>
+                                        <div ng-model='timepickerTest10' ng-time-a
+                                             class="input-group date form_date col-md-8" data-date=""
+                                             data-date-format="yyyy-MM-dd" data-link-field="dtp_input10"
+                                             data-link-format="yyyy-mm-dd">
+                                            <input class="form-control" size="16" type="text" value="" ng-model="$parent.Start1">
+                                            <span class="input-group-addon"><span
+                                                    class="glyphicon glyphicon-remove"></span></span>
+                                            <span class="input-group-addon"><span
+                                                    class="glyphicon glyphicon-calendar"></span></span>
+                                        </div>
+                                        <input type="hidden" id="dtp_input10" value=""/>
+                                    </div>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                    <div  class="form-group" >
+                                        <div class="col-md-4">
+                                            <label style="width: auto;margin: 5px 0px">-&#45;&#45;</label>
+                                        </div>
+                                        <div ng-model='timepickerTest20' ng-time-a
+                                             class="input-group date form_date col-md-8" data-date=""
+                                             data-date-format="yyyy-MM-dd" data-link-field="dtp_input20"
+                                             data-link-format="yyyy-mm-dd">
+                                            <input class="form-control" size="16" type="text" value="" ng-model="$parent.End1">
+                                            <span class="input-group-addon"><span
+                                                    class="glyphicon glyphicon-remove"></span></span>
+                                            <span class="input-group-addon"><span
+                                                    class="glyphicon glyphicon-calendar"></span></span>
+                                        </div>
+                                        <input type="hidden" id="dtp_input20" value=""/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group" style="float:left; display:inline;">
+
+                                        <div class="col-md-12">
+                                            <button class="btn m-b-xs btn-sm btn-primary" style="margin: 0px 50px" ng-click="showCase.queryCamera()">查询
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+
+                    </li>
+
+                </ul>
+            </div>
+            <div class="row wrapper" >
+
+                <div style="height: 30px"></div>
+                <div id="ceshi">
+                    <form class="form-inline">
+                        <table datatable id="DetectList" dt-dataset="dtDataset" dt-options="dtOptions"
+                               dt-columns="dtColumns"
+                               class="table table-striped table-bordered">
+                        </table>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+

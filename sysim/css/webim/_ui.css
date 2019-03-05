@@ -1,0 +1,75 @@
+/*
+ * button
+ */
+.webim-button {
+  font-size: 16px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 10px auto;
+  width: 300px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 2px; }
+  .webim-button.error {
+    background-color: #ff3a00;
+    border: 1px solid #ff3a00; }
+  .webim-button:hover {
+    background-color: #1aa1e4; }
+
+/*
+ * input
+ */
+.webim-input {
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 0 4px;
+  display: inline-block;
+  margin: 10px auto 0;
+  width: 300px;
+  height: 36px;
+  line-height: 36px;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 1px solid #e5e5e5;
+  -webkit-tap-highlight-color: transparent;
+  background-color: white; }
+
+/*
+ * checkbox
+ */
+.webim-checkbox {
+  text-align: left;
+  margin: 10px 0 10px 5px;
+  padding-left: 50px;
+  box-sizing: border-box; }
+  .webim-checkbox span {
+    height: 30px;
+    line-height: 30px; }
+  .webim-checkbox > i {
+    position: relative;
+    margin-right: 6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #cccccc;
+    cursor: pointer; }
+    .webim-checkbox > i:hover {
+      background-color: #fff; }
+      .webim-checkbox > i:hover em {
+        display: inline-block;
+        color: #cccccc; }
+    .webim-checkbox > i.checked {
+      background-color: #afd7e8; }
+      .webim-checkbox > i.checked em {
+        display: inline-block;
+        color: #000; }
+    .webim-checkbox > i em {
+      display: none;
+      position: absolute;
+      left: -6px;
+      top: -10px;
+      color: #000; }
+
+/*# sourceMappingURL=_ui.css.map */

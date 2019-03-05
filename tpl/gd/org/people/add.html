@@ -1,0 +1,80 @@
+<form name="form"  id="tf" role="form" class="form-horizontal form-validation">
+    <div class="modal-header">
+        <h3 class="modal-title text-center">新增人员</h3>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <!--<div class="col-md-3">
+                <label>部门</label>
+            </div>
+            <div class="col-md-9">
+                <ui-select multiple ng-model="user.orgs" theme="bootstrap">
+                    <ui-select-match placeholder="请选择部门...">{{$item.orgName}}</ui-select-match>
+                    <ui-select-choices repeat="item in groups | filter: $select.search">
+                        <div ng-bind-html="item.parentName | highlight: $select.search"></div>
+                        <small ng-bind-html="item.orgName | highlight: $select.search"></small>
+                    </ui-select-choices>
+                </ui-select>
+                &lt;!&ndash; <select ng-model="orgs" class="form-control" ng-options="x.orgName for x in groups" >&ndash;&gt;
+
+                </select>
+            </div>-->
+            <!--<div class="col-md-9">
+               <select ng-model="orgs" class="form-control" required>
+                   <option ng-repeat="x in groups" value="{{x}}">{{x.parentName}}-{{x.orgName}}</option>
+                </select>
+            </div>-->
+        </div>
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>姓名</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="user.realName" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>别名</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="user.policeNum" name="policeNum" required/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>布控地点</label>
+            </div>
+
+            <div class="col-md-9">
+               <!-- <input type="text" class="form-control" ng-model="user.autoGraph">-->
+                <select ng-model="user.autoGraph" class="form-control" required>
+                    <option ng-repeat="x in locations" value="{{x.AttendanceLocationID}}">{{x.AttendanceLocationName}}</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>证件照</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="file" name="file"  required/>
+
+                <input name="token" type="hidden" ng-model="token" maxlength="1000">
+            </div>
+        </div>
+
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button"  ng-disabled="form.$invalid" ng-click="addVm.submit()">提交</button>
+        <button class="btn btn-warning" type="button" ng-click="addVm.cancel()">取消</button>
+    </div>
+
+</form>

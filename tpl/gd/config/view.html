@@ -1,0 +1,117 @@
+<div class="modal-header-without-border-bottom">
+    <div class="col-md-4">
+        <!--<h3 class="modal-title ">查看用户</h3>-->
+    </div>
+    <div>
+        <ul id="userViewTab" class="nav nav-tabs">
+            <li class="active"><a data-target ="#basicInfo" data-toggle="tab">当前布控设置内容</a></li>
+          <!--  <li><a data-target ="#accountInfo" data-toggle="tab">账号信息</a></li>-->
+        </ul>
+    </div>
+</div>
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active" id="basicInfo">
+        <div class="modal-body">
+            <form role="form" class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label>工作日</label>
+                    </div>
+
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" ng-model="views.WorkingDays" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label>法定节假日</label>
+                    </div>
+
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" ng-model="views.NationalHolidays" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label>上班打卡时间</label>
+                    </div>
+
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" ng-model="views.ClockIn" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label>下班打卡时间</label>
+                    </div>
+
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" ng-model="views.ClockOff" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label>午休开始时间</label>
+                    </div>
+
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" ng-model="views.LunchTimeBegin" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label>午休结束时间</label>
+                    </div>
+
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" ng-model="views.LunchTimeEnd" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label>上班打卡宽限时间</label>
+                    </div>
+
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" ng-model="views.ClockInExtraTime" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label>下班打卡宽限时间</label>
+                    </div>
+
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" ng-model="views.ClockOffExtraTime" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label>不在岗时长</label>
+                    </div>
+
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" ng-model="views.OffDutyTime" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label>加班时间</label>
+                    </div>
+
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" ng-model="views.OvertimeBegin" readonly>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="viewVm.ok()">关闭</button>
+            <!--<button class="btn btn-warning" type="button" ng-click="viewVm.cancel()">删除账户</button>-->
+        </div>
+    </div>
+</div>
+
+
+

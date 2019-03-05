@@ -1,0 +1,30 @@
+<form name="form"  class="form-horizontal form-validation">
+    <div class="modal-header">
+        <h3 class="modal-title" align="center">批量编辑组</h3>
+    </div>
+
+    <div class="modal-body">
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>更改组为：</label>
+            </div>
+
+            <div class="col-md-9">
+                <ui-select multiple ng-model="tmp.orgs" theme="bootstrap">
+                    <ui-select-match placeholder="请选择组...">{{$item.orgName}}</ui-select-match>
+                    <ui-select-choices repeat="item in groups2 | filter: $select.search">
+                        <div ng-bind-html="item.parentName | highlight: $select.search"></div>
+                        <small ng-bind-html="item.orgName | highlight: $select.search"></small>
+                    </ui-select-choices>
+                </ui-select>
+                <!-- <select ng-model="orgs" class="form-control" ng-options="x.orgName for x in groups" >-->
+
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="btn btn-primary"  ng-disabled="form.$invalid" ng-click="submit()">确认</div>
+        <div class="btn btn-warning"  ng-click="cancel()">取消</div>
+    </div>
+</form>

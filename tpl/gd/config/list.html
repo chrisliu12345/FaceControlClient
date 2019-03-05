@@ -1,0 +1,64 @@
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
+    app.settings.asideFolded = false;
+    app.settings.asideDock = false;
+  ">
+    <div class="wrapper-md" ng-controller="configCtrl as showCase">
+        <div class="panel panel-default">
+            <div class="panel-heading" style="height: 40px">
+
+
+                <ul class="nav navbar-nav">
+                    <li class="{{ui==1? 'active':''}}">
+                        <a href="javaScript:void(0)"  data-toggle="li" ng-click="showCase.select_to_item(1)" >
+                            <span  class="label label-info" id="cameraConfig">设备手动配置</span>
+                        </a>
+                    </li>
+                    <li class="{{ui==5? 'active':''}}">
+                        <a href="javaScript:void(0)"  data-toggle="li" ng-click="showCase.select_to_item(5)" >
+                            <span id="addTbl">设备平台加入</span>
+                        </a>
+                    </li>
+                    <li class="{{ui==3? 'active':''}}">
+                        <a href="javaScript:void(0)"  data-toggle="li" ng-click="showCase.select_to_item(3)">
+                            <span id="examConfig">布控地点设置</span>
+                        </a>
+                    </li>
+                  <!--  <li class="{{ui==2? 'active':''}}">
+                        <a href="javaScript:void(0)"  data-toggle="li" ng-click="showCase.select_to_item(2)">
+                           <span id="dataManager">考勤数据管理</span>
+                        </a>
+                    </li>
+
+                    <li class="{{ui==4? 'active':''}}">
+                        <a href="javaScript:void(0)"  data-toggle="li" ng-click="showCase.select_to_item(4)" >
+                            <span id="bigDisplay">大屏显示设置</span>
+                        </a>
+                    </li>-->
+
+
+                </ul>
+
+            </div>
+            <br>
+            <div class="row wrapper" ng-switch="name">
+                <div ng-switch-default="1">
+                    <div ng-include="'tpl/gd/config/camera.html'" ng-controller="CamCtrl as showCase"></div>
+                </div>
+                <div ng-switch-when="2">
+                    <div ng-include="'tpl/gd/config/attendance_data.html'" ng-controller="AttendDataCtrl as showCase"></div>
+                </div>
+                <div  ng-switch-when="3">
+                    <div ng-include="'tpl/gd/config/attendance.html'" ng-controller="AttendCtrl as showCase"></div>
+                </div>
+                <div  ng-switch-when="4">
+                    <div ng-include="'tpl/gd/config/bigscreen.html'" ng-controller="BigCtrl as showCase"></div>
+                </div>
+                <div  ng-switch-when="5">
+                    <div ng-include="'tpl/gd/config/camera/addtbl.html'" ng-controller="addTblCtrl as showCase"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+

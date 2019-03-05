@@ -1,0 +1,52 @@
+<form name="form" account="form" class="form-horizontal form-validation">
+    <div class="modal-header">
+        <h3 class="modal-title" align="center">账户详情</h3>
+    </div>
+    <div class="modal-body">
+
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>账户名</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="account.username"
+                       readonly>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>账户加密密码</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="account.password"
+                       readonly>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>账户真实密码</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="account.appId"
+                       readonly>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>账户创建时间</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="account.createTime" readonly/>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="ok()">关闭</button>
+    </div>
+
+</form>

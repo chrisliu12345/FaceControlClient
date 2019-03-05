@@ -1,0 +1,38 @@
+<form name="form" role="form" class="form-horizontal form-validation">
+    <div class="modal-header">
+        <h3 class="modal-title" align="center">编辑</h3>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>组</label>
+            </div>
+
+            <div class="col-md-9">
+                <select ng-model="edits.orgs" class="form-control" ng-change="checkName()">
+                    <option ng-repeat="x in groups" value="{{x.parentName}}|{{x.orgName}}|{{x.id}}">({{x.parentName}}){{x.orgName}}</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>姓名</label>
+            </div>
+
+            <div class="col-md-9">
+                <select ng-model="edits.NewName" class="form-control" >
+                    <option ng-repeat="x in Lusers" value="{{x.CollectId}}|{{x.EmployeeId}}">{{x.realName}}</option>
+                </select>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-disabled="form.$invalid" ng-click="editVm.updateDectImg()">提交</button>
+        <button class="btn btn-warning" type="button" ng-click="editVm.cancel()">取消</button>
+    </div>
+
+</form>

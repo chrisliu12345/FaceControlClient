@@ -1,0 +1,12 @@
+[
+  {
+    "id": "zhangsan",
+    "firstName": "张三",
+    "lastName": "男"
+  },
+  {
+    "id": "lisi",
+    "firstName": "李四",
+    "lastName": "女"
+  }
+]

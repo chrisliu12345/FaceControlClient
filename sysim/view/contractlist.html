@@ -1,0 +1,88 @@
+<div style="position: relative;">
+    <div class="input-group">
+        <input class="form-control" type="text"/>
+        <span class="input-group-btn">
+            <button class="btn btn-primary" type="button">搜索</button>
+        </span>
+    </div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+            <a href="#group" role="tab" data-toggle="tab">群组</a>
+        </li>
+        <li role="presentation">
+            <a href="#friend" role="tab" data-toggle="tab">好友</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="group">
+
+            <!--原始的-->
+            <!--<div class="contract-item selected" ng-model="groupList"-->
+            <!--ng-repeat="group in groupList" ng-click="enterChat(group)">-->
+            <!--<div class="contract-item-icon">-->
+            <!--<img class="w20" ng-src="{{group.avatar}}"/>-->
+            <!--</div>-->
+
+            <!--<img ng-src="{{group.avatar}}"/>-->
+            <!--<div class="contract-name">{{group.name}}</div>-->
+
+            <!--<em>-->
+            <!--<img class="w20" ng-src="{{group.msglist[group.msglist.length-1].data[0].data}}"/>-->
+            <!--</em>-->
+            <!--&lt;!&ndash;<div class="contract-msg">&ndash;&gt;-->
+            <!--&lt;!&ndash;<img class="w50" ng-src="{{group.msglist[group.msglist.length-1].data[0].data}}"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--</div>-->
+            <!--原始的END-->
+
+            <div class="webim-contact-wrapper">
+                <!--<div id="{{group.name}}" ng-class="{'webim-contact-item':true, selected:choo}" ng-repeat="group in groupList"-->
+                <div id="{{group.name}}" class="webim-contact-item " ng-repeat="group in groupList"
+                    ng-click="enterChat(group, groupList)">
+                    <!--<div class="webim-avatar-icon">-->
+                    <div class="webim-avatar-icon">
+                        <img class="w50" src="{{group.avatar}}"/>
+                    </div>
+                    <div class="webim-contact-info">
+                        <span class="webim-contact-username">{{group.name}}</span>
+                    </div>
+                    <em>
+                        <!--判断是否为纯文本或者表情，如果是表情或者表情与文本的结合就将他们遍历出来-->
+                        <span ng-if="!isString(group.msglist[group.msglist.length-1].data)">
+                            <span ng-repeat="emoj in group.msglist[group.msglist.length-1].data">
+                                <span ng-if="emoj.type == 'emoji' ">
+                                         <img ng-src="{{emoj.data}}"/>
+                                </span>
+                                <span ng-if="emoj.type == 'txt'">
+                                    {{emoj.data}}
+                                </span>
+                            </span>
+                        </span>
+                        <!--<div ng-if="group.msglist[group.msglist.length-1].data[0].data">-->
+                        <!--<img src=" {{group.msglist[group.msglist.length-1].data[0].data}} "/>-->
+                        <!--</div>-->
+                        <div ng-if=" isString(group.msglist[group.msglist.length-1].data)">
+                            {{group.msglist[group.msglist.length-1].data}}
+                        </div>
+                    </em>
+                    <i class="webim-msg-prompt" data-count="0" style="display:none;"></i>
+                    <div class="contract-new" ng-show="group.hasNew">new</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div role="tabpanel" class="tab-pane" id="friend">
+            <!--<div class="contract-item" ng-model="friendList" ng-repeat="friend in friendList" ng-click="enterChat(friend)">
+                <img ng-src="{{friend.avatar}}" />
+                <div class="contract-name">{{friend.name}}</div>
+                <div class="contract-msg">{{friend.msglist[friend.msglist.length-1].data}}</div>
+                <div class="contract-new" ng-show="friend.hasNew">new</div>
+            </div>-->
+            <tree-grid tree-data="tree_data" tree-control="my_tree" col-defs="col_defs"
+                       expand-on="expanding_property"
+                       on-select="my_tree_handler(branch)" expand-level="2"
+                       icon-leaf="glyphicon glyphicon-globe"></tree-grid>
+        </div>
+    </div>
+</div>

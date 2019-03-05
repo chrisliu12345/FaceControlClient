@@ -1,0 +1,40 @@
+<form name="form" role="form" class="form-horizontal form-validation">
+    <div class="modal-header">
+        <h3 class="modal-title" align="center">编辑</h3>
+    </div>
+    <div class="modal-body">
+        <input type="hidden" class="form-control" ng-model="camera.CamerId"
+               required>
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>位置名称</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="camera.Site"
+                       required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>任务类型</label>
+            </div>
+
+            <div class="col-md-9">
+                <select ng-model="camera.TaskType" class="form-control">
+                    <option value="0">入口
+                    <option value="1">出口
+                    <option value="2">出入口
+                </select>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-disabled="form.$invalid" ng-click="editVm.updateCamera()">提交</button>
+        <button class="btn btn-warning" type="button" ng-click="editVm.cancel()">取消</button>
+    </div>
+
+</form>

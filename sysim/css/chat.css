@@ -1,0 +1,611 @@
+/**消息体**/
+.webim-msg-container {
+  overflow: hidden;
+  margin: 24px 0;
+}
+.webim-msg-container > div {
+    max-width: 60%;
+    overflow: hidden;
+}
+
+.webim-msg-container .right > p {
+      color: rgb(153, 153, 153);
+      letter-spacing: 1px;
+      margin-right: 10px;
+}
+
+.webim-msg-container .right .webim-msg-icon {
+  color: #b4e4fc;
+  right: -40px;
+}
+
+.webim-msg-container .right .webim-msg-value {
+  float: right;
+  margin: 6px 10px 0 0;
+  background-color: #b4e4fc;
+}
+.webim-msg-container .right .webim-msg-error {
+  float: right;
+  margin: 6px 10px 0 0;
+}
+
+.webim-msg-container .right .webim-msg-header {
+  text-align: right;
+}
+
+.webim-msg-container .left > p {
+      color: rgb(153, 153, 153);
+      letter-spacing: 1px;
+      margin-left: 10px;
+}
+
+.webim-msg-container .left .webim-msg-icon {
+  color: rgb(241, 242, 236);
+  left: -10px;
+}
+
+.webim-msg-container .left .webim-msg-value {
+  background-color: rgb(241, 242, 236);
+  float: left;
+  margin: 6px 0 0 10px;
+}
+
+.webim-msg-container .left .webim-msg-header {
+  text-align: left;
+}
+
+.webim-msg-icon {
+  position: absolute;
+  top: 4px;
+  font-size: 10px !important;
+}
+
+.webim-msg-value {
+  position: relative;
+  min-height: 30px;
+  max-width: 80%;
+  border-radius: 4px;
+  padding: 6px;
+  box-sizing: border-box;
+  min-width: 40%;
+  /*background-color: #0a1015;*/
+    /*border-top:7px dashed #000000;*/
+ /*background-image: linear-gradient(rgba(0,0,0,1) 1px ,transparent 0);*/
+    /*background-image: linear-gradient(black, 2px, transparent 0);*/
+    /*background-size: 15px 15px;*/
+}
+.webim-msg-value video {
+    width: 100%;
+}
+
+.webim-msg-value.webim-img-msg-wrapper {
+    padding: 1px;
+}
+
+.webim-msg-value > div,
+.webim-msg-value > pre {
+    white-space: nowrap;
+    /*min-width: 40%;*/
+    /*max-width: 80%;*/
+    word-break: break-all;
+    color: rgb(26, 26, 26);
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    /*background: none;*/
+    text-indent: 25px;
+}
+
+.webim-msg-value .emoji {
+    width: 32px;
+    vertical-align: bottom;
+}
+
+.webim-msg-value i {
+    display: block;
+    font-style: normal;
+    margin-left: 0px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .25);
+}
+
+.webim-msg-value  a {
+    display: block;
+    margin-left: 30px;
+    margin-top: -28px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .25);
+    text-decoration: none;
+}
+
+
+/*模仿webim-msg-value 写一个webim-msg-speech 专门用来显示*/
+
+.webim-msg-container .left .webim-msg-speech {
+    background-color: rgb(241, 242, 236);
+    float: left;
+    margin: 6px 0 0 10px;
+}
+
+.webim-msg-speech {
+    position: relative;
+    min-height: 30px;
+    max-width: 80%;
+    border-radius: 4px;
+    padding: 6px;
+    box-sizing: border-box;
+    min-width: 40%;
+    /*background-color: #0a1015;*/
+    /*border-top:7px dashed #000000;*/
+    /*background-image: linear-gradient(rgba(0,0,0,1) 1px ,transparent 0);*/
+    /*background-image: linear-gradient(black, 2px, transparent 0);*/
+    /*background-size: 15px 30px;*/
+}
+
+
+.webim-msg-speech > div,
+.webim-msg-speech > pre {
+    white-space: nowrap;
+    word-break: break-all;
+    color: rgb(26, 26, 26);
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    /*background: none;*/
+    text-indent: 25px;
+}
+.webim-msg-speech i {
+    display: block;
+    font-style: normal;
+    margin-left: 0px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .25);
+}
+.webim-msg-speech p{
+    /*white-space: pre-line;*/
+    top:30px;
+    text-indent: 10px;
+}
+/*语音转文字的时候需要这个样式*/
+.webim-msg-line {
+    white-space: pre-line;
+    /*background-image: linear-gradient(rgba(0,0,0,1) 1px ,transparent 0);*/
+    /*background-image: linear-gradient(black, 2px, transparent 0);*/
+    /*background-size: 15px 20px;*/
+    background: url(../images/blackline20.png) no-repeat;
+    background-position:1px 1px;
+    /*background-size: 200px 20px;*/
+}
+
+
+.webim-msg-img {
+  max-width: 100%;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.webim-msg-header {
+  line-height: 30px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+.webim-msg-header-icon {
+  vertical-align: middle;
+  display: inline-block;
+  margin: -46px 4px 0 -4px;
+  line-height: 40px;
+  color: #868683;
+}
+
+.webim-msg-name {
+  width: 100%;
+  display: inline-block;
+  height: 40px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.webim-msg-fileSize{
+  display: inline-block;
+  float: right;
+  width: 47px;
+  overflow: hidden;
+}
+
+.webim-img-expand {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .3);
+  z-index: 3;
+}
+.webim-img-expand  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+}
+
+.webim-audio-slash {
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+}
+
+.slash {
+  animation: slash 1s infinite;
+  -moz-animation: slash 1s infinite;
+  -webkit-animation: slash 1s infinite;
+}
+
+@keyframes slash {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, .1);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@-moz-keyframes slash {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, .1);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@-webkit-keyframes slash {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, .1);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+.webim-avatar-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-filter: contrast(1.2);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.webim-avatar-icon.small {
+    width: 30px;
+    height: 30px;
+}
+.webim-avatar-icon img{
+    width: 100%;
+    height: 100%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.webim-msg-container p{
+    margin: 0;
+    padding: 0;
+}
+/**聊天框**/
+.font {
+  width: 40px;
+  height: 40px;
+  font-family: 'webim' !important;
+  font-size: 40px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font.small {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+  }
+
+  .font.xsmaller {
+    width: 26px;
+    height: 26px;
+    font-size: 26px;
+  }
+
+  .font.smaller {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+  }
+
+  .font.smallest {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+  }
+.webim-chat {
+    position: relative;
+    max-width: 1024px;
+    min-width: 960px;
+    max-height: 600px;
+    height: 100%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 6px 0px;
+    border: 0px none rgb(0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    border-radius: 2px;
+    overflow: hidden;
+}
+.webim-chatwindow {
+    position: relative;
+    float: left;
+    height: 50px;
+    width: 100%;
+}
+.webim-chatwindow textarea {
+    box-sizing: border-box;
+    height: 80px;
+    border: none;
+    width: 100%;
+    padding: 10px 15px;
+}
+.webim-chatwindow-title {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+.webim-chatwindow-title > i {
+    color: #cccccc;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 10px;
+    padding-bottom: 22px;
+}
+.webim-chatwindow-title > i .webim-up-icon {
+    transform: rotate(180deg);
+}
+
+.webim-chatwindow-title > i .webim-call-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.webim-chatwindow-title > i .webim-accept-icon {
+    position: absolute;
+    left: 40px;
+    top: 0;
+}
+.webim-chatwindow-options {
+    border-top: 1px solid rgb(242, 242, 242);
+    width: 100%;
+    z-index: 1;
+    height: 30px;
+    line-height: 30px;
+}
+.webim-chatwindow-options > span {
+    margin-left: 6px;
+    color: #CCCCCC;
+    cursor: pointer;
+}
+
+.webim-chatwindow-options > span:hover {
+    color: #333333;
+}
+.webim-send-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+.webim-chatwindow-msg {
+    z-index: 1;
+    height: 280px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    width: 100%;
+}
+.webim-send-wrapper > ul {
+        z-index: 1;
+        position: absolute;
+        width: 400px;
+        height: 150px;
+        bottom: 115px;
+        left: -140px;
+        border-radius: 2px;
+        background: #fff;
+        box-sizing: border-box;
+        padding: 4px;
+        box-shadow: rgba(0, 0, 0, 0.298039) 0px 4px 12px 0px;
+}
+
+.webim-send-wrapper > ul > li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 2px 3px 0 3px;;
+}
+  
+.webim-chatwindow .webim-operations-icon {
+  top: 5px;
+  left: auto;
+  right: 10px;
+  bottom: 0px;
+}
+
+.webim-chatwindow .webim-operations {
+  left: inherit;
+  right: 40px;
+  top: 10px;
+  bottom: auto;
+  z-index: 2; 
+}
+
+.webim-friend-options span.radio_span {
+  width: 80px;
+  display: inline-block;
+}
+
+.webim-friend-options input.radio {
+  height: 10px;
+  width: 20px;
+}
+
+.webim_isWindowSDK {
+  top: 0;
+  bottom: 0;
+}
+
+.webim_isWindowSDK .webim-chat {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  width: 100%;
+}
+
+.webim-friend-requests-windowSDK {
+  width: 500px;
+}
+
+.webim-friend-requests-windowSDK span {
+  width: 100%;
+}
+
+.webim-msg-value a.dir {
+  margin-left: 130px;
+  margin-top: -20px;
+}
+
+.webim-leftbar .username {
+  width: 100%;
+  overflow: hidden;
+}
+
+.webim-loading span {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  height: 80px;
+  text-align: center;
+}
+
+span.red {
+  color: rgb(255, 42, 0);
+}
+
+.webim-contact-loading {
+  width: 24px;
+  margin: 0 auto;
+}
+
+.webim-contact-loading img {
+  width: 24px;
+}
+.webim-send-wrapper{
+    position: relative;
+}
+.webim-chatwindow-options > div > div{
+    z-index: 100;
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    bottom: 30px;
+    left: -5px;
+    border-radius: 2px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 4px;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 4px 12px 0px;
+}
+.webim-chatwindow-options > div> div >a{
+    cursor: pointer;
+    display: inline-block;
+    margin: 2px 3px 0 3px;;
+}
+/*处理voice内容*/
+.voice{
+    padding: 7px 13px;
+    width: 150px;
+    max-width: 300px;
+    cursor: pointer;
+    position: relative;
+}
+.web_wechat_voice_green{
+    float:right;
+    background: url(../images/5af37c4a880a95586cd41c5b251d5562@1x.png) no-repeat;
+    background-position: -464px -398px;
+    -webkit-background-size: 487px 462px;
+    background-size: 487px 462px;
+
+}
+.web_wechat_voice_gray, .web_wechat_voice_green {
+    display: inline-block;
+    vertical-align: middle;
+    width: 23px;
+    height: 23px;
+    top:3px;
+}
+.web_wechat_voice_gray{
+    float:left;
+    background: url(../images/5af37c4a880a95586cd41c5b251d5562@1x.png) no-repeat;
+    background-position: -200px -432px;
+    -webkit-background-size: 487px 462px;
+    background-size: 487px 462px;
+}
+
+.web_wechat_voice_playing {
+    /*background: url(../images/3Oeq2i3.gif)*/
+}
+
+.web_wechat_voice_gray_playing, .web_wechat_voice_playing {
+    width: 23px;
+    height: 23px;
+    vertical-align: middle;
+    display: inline-block;
+    top:3px;
+}
+
+.web_wechat_voice_gray_playing {
+    background: url(../images/1Rw0-Kq.gif)
+}
+
+.clearfix .webim-msg-value .webim-audio-slash .duration {
+    position: absolute;
+    right: -77px;
+    width: 55px;
+    color: #888;
+    cursor: default
+}

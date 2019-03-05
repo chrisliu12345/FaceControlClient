@@ -1,0 +1,9 @@
+<div class="news-panel">
+    <div class="panel-title">警情列表</div>
+    <div class="panel-container">
+        <!--href="#"-->
+        <a ng-repeat="item in newsList"  ng-click="showNewDetail(item)">
+            <div class="news-list-item">{{item.title}}</div></a>
+
+    </div>
+</div>

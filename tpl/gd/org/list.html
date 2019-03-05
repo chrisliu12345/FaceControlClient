@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="../../../css/bootstrapStyle/bootstrapStyle.css" type="text/css">
+<!--<script type="text/javascript" src="../../../sysim/js/jquery.min.js"></script>-->
+<script type="text/javascript" src="../../../sysim/zTree/jquery.ztree.all.js"></script>
+
+<style>
+    #menu{
+        width: 0; /*设置为0 隐藏自定义菜单*/
+        height: 125px;
+        overflow: hidden; /*隐藏溢出的元素*/
+        box-shadow: 0 1px 1px #888,1px 0 1px #ccc;
+        position: absolute; /*自定义菜单相对与body元素进行定位*/
+    }
+    .menu{
+        width: 130px;
+        height: 25px;
+        line-height: 25px;
+        padding: 0 10px;
+    }
+    #menu1{
+          width: 0; /*设置为0 隐藏自定义菜单*/
+          height: 125px;
+          overflow: hidden; /*隐藏溢出的元素*/
+          box-shadow: 0 1px 1px #888,1px 0 1px #ccc;
+          position: absolute; /*自定义菜单相对与body元素进行定位*/
+      }
+    .menu1{
+        width: 130px;
+        height: 25px;
+        line-height: 25px;
+        padding: 0 10px;
+    }
+</style>
+
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
+    app.settings.asideFolded = false;
+    app.settings.asideDock = false;
+  ">
+
+    <div class="wrapper-md" ng-controller="orgCtrl as showCase">
+
+        <div class="panel panel-default ">
+            <div class="panel-heading">
+                组织架构
+            </div>
+            <div class="panel-body" >
+                <div class="form-group" style="height:600px; overflow:auto">
+                    <div class="col-md-3">
+                        <label>组织机构展示</label>
+                    </div>
+
+                    <div class="col-md-8" >
+                       <ul   my-dir class="ztree"  id="treeDemo"></ul>
+
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+
+        <div id="menu">
+            <ul>
+
+                <li style="list-style-type:decimal;"><button type="button" class="btn btn-info btn-xs" ng-click="addGroupRight()">添加组</button></li>
+                <li style="list-style-type:decimal;"><button type="button" class="btn btn-info btn-xs" ng-click="editGroupRight()">编辑组</button></li>
+                <li style="list-style-type:decimal;"><button type="button" class="btn btn-info btn-xs" ng-click="deleteGroupRight()">删除组</button></li>
+                <li style="list-style-type:decimal;"><button type="button" class="btn btn-info btn-xs" ng-click="addPeopleRight()">添加人员</button></li>
+                <li style="list-style-type:decimal;"><button type="button" class="btn btn-info btn-xs" ng-click="exportGroupsRight()">导出组织机构</button></li>
+
+            </ul>
+        </div>
+        <div id="menu1">
+            <ul>
+                <li style="list-style-type:decimal;"><button type="button" class="btn btn-info btn-xs" ng-click="editPeopleRight()">编辑人员信息</button></li>
+                <li style="list-style-type:decimal;"><button type="button" class="btn btn-info btn-xs" ng-click="deletePeopleRight()">删除该人员</button></li>
+            </ul>
+        </div>
+
+    </div>
+
+    </div>
+

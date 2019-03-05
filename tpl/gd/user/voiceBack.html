@@ -1,0 +1,13 @@
+<!--<div class="modal-header-without-border-bottom">-->
+<div class="modal-header">
+    以下人员语音合成成功！
+</div>
+<div class="modal-body pre-scrollable">
+
+    <ul class="list-group" ng-repeat="name in voiceData track by $index">
+        <li class="list-group-item">{{name}}</li>
+    </ul>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-sm btn-primary " ng-click="cancel()">确定</button>
+</div>

@@ -1,0 +1,32 @@
+<!--<div class="modal-header-without-border-bottom">-->
+<div class="modal-header">
+    数据分析结果
+</div>
+<div class="modal-body pre-scrollable">
+
+    <table class="table table-hover">
+        <caption>1.请记录错误的图片名称，使用“批量注册”功能的更新方式进行图片重新注册。<br>
+            2.重新注册的图片名称需以目前错误的图片名称命名，并进行打包压缩，然后进行上传！</caption>
+        <thead>
+        <tr>
+            <th>姓名</th>
+            <th>图片</th>
+            <th>图片名称</th>
+            <th>是否注册成功</th>
+            <th>失败原因</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="x in currentUser">
+            <td style="vertical-align:middle">{{x.userName}}</td>
+            <td><a href="javaScript:void(0)" ng-click="bigAllpic( x.id)"> <img ng-src="{{x.url}}/{{x.RelativePath}}" style="width:50px; height:50px;" id="{{x.id}}"></a></td>
+            <td>{{x.picName}}</td>
+            <td><span class="{{x.FailReasons==undefined? 'glyphicon glyphicon-ok':'glyphicon glyphicon-remove'}}"></span></td>
+            <td>{{x.FailReasons}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-sm btn-primary " ng-click="cancel()">确定</button>
+</div>

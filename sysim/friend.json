@@ -1,0 +1,364 @@
+﻿[
+  {
+    "updateTime": "2017-04-30 12:12:12",
+    "parentId": "root",
+    "ifuse": "y",
+    "type": "org",
+    "parentName": "root",
+    "id": "1",
+    "leader": "张三",
+    "oredeNum": "1",
+    "createTime": "2017-04-30 12:12:12",
+    "path": "root-航天长峰",
+    "children": [
+      {
+        "updateTime": "2017-05-08 11:24:27",
+        "parentId": "1",
+        "ifuse": "y",
+        "type": "org",
+        "parentName": "航天长峰",
+        "id": "d6be153d-a133-43bd-a945-bf2570391e07",
+        "leader": "李四",
+        "createTime": "2017-05-08 11:24:27",
+        "children": [
+          {
+            "updateTime": "2017-05-26 21:55:53",
+            "parentId": "d6be153d-a133-43bd-a945-bf2570391e07",
+            "ifuse": "y",
+            "type": "org",
+            "parentName": "项目部",
+            "id": "0b9eadcf-fa67-49a3-bbe9-b5ee7186db7d",
+            "leader": "付总",
+            "createTime": "2017-05-26 21:55:53",
+            "children": [
+              {
+                "policeNum": "78672",
+                "type": "user",
+                "identityCode": "23333",
+                "orgId": "0b9eadcf-fa67-49a3-bbe9-b5ee7186db7d",
+                "id": "4b41b38e-63f0-4b3b-b918-da0413baab60",
+                "org": "北京分部",
+                "updateTime": "2017-06-06 23:11:15",
+                "realName": "陈肖",
+                "createTime": "2017-06-06 23:11:15",
+                "phone": "18567560983",
+                "ifuse": "y"
+              },
+              {
+                "policeNum": "0070",
+                "type": "user",
+                "identityCode": "90",
+                "orgId": "0b9eadcf-fa67-49a3-bbe9-b5ee7186db7d",
+                "children": [
+                  {
+                    "ORDERNUM": "1",
+                    "UPDATETIME": "2017-05-16 16:00:48",
+                    "DESCRIPTION": "移动执法",
+                    "appId": "2fa31f79-302b-4f10-8315-e615adc0af2c",
+                    "communicationId": "sunhongyu",
+                    "ID": "63fd162c-28be-44d8-8703-9e23894a87e7",
+                    "CREATETIME": "2017-05-16 16:00:48",
+                    "type": "app",
+                    "NAME": "交警APP",
+                    "IFUSE": "y"
+                  }
+                ],
+                "id": "4bfef18b-2461-48bf-9a2b-f38b4117161f",
+                "org": "北京分部",
+                "updateTime": "2017-06-08 17:21:05",
+                "picture": "http://192.168.6.70:8082/my/sunhongyu20160608102424.jpg",
+                "realName": "孙宏宇",
+                "createTime": "2017-06-07 20:35:12",
+                "phone": "17867672323",
+                "ifuse": "y"
+              }
+            ],
+            "orgName": "北京分部"
+          },
+          {
+            "updateTime": "2017-05-27 16:31:53",
+            "parentId": "d6be153d-a133-43bd-a945-bf2570391e07",
+            "ifuse": "y",
+            "type": "org",
+            "parentName": "项目部",
+            "id": "3614bcee-06a1-4639-a352-eaee4538145c",
+            "leader": "王琦谁",
+            "createTime": "2017-05-25 00:25:27",
+            "children": [
+              {
+                "mail": "2@2",
+                "policeNum": "250",
+                "type": "user",
+                "identityCode": "111",
+                "orgId": "3614bcee-06a1-4639-a352-eaee4538145c",
+                "station": "程序员",
+                "id": "941cb212-141a-430f-b89f-cd94458239b7",
+                "org": "新疆分部",
+                "updateTime": "2017-06-08 17:13:01",
+                "picture": "http://192.168.6.70:8082/my/ccf120160606173323.jpg",
+                "realName": "程舰",
+                "createTime": "2017-05-25 16:03:27",
+                "phone": "13011386235",
+                "ifuse": "y"
+              },
+              {
+                "mail": "2@2",
+                "orderNum": "2",
+                "policeNum": "141",
+                "type": "user",
+                "identityCode": "6",
+                "orgId": "3614bcee-06a1-4639-a352-eaee4538145c",
+                "id": "b4441f09-2f7d-4648-a50b-f8d779bf5030",
+                "org": "新疆分部",
+                "updateTime": "2017-05-27 16:32:50",
+                "realName": "王五",
+                "createTime": "2017-04-18 15:08:15",
+                "phone": "15111111114",
+                "ifuse": "y"
+              },
+              {
+                "mail": "1@1",
+                "orderNum": "2",
+                "policeNum": "151",
+                "type": "user",
+                "identityCode": "7",
+                "orgId": "3614bcee-06a1-4639-a352-eaee4538145c",
+                "children": [
+                  {
+                    "ORDERNUM": "1",
+                    "UPDATETIME": "2017-05-16 16:00:48",
+                    "DESCRIPTION": "移动执法",
+                    "appId": "68cb5525-41d6-49e9-9f09-ba8d9cd6d988",
+                    "ID": "63fd162c-28be-44d8-8703-9e23894a87e7",
+                    "CREATETIME": "2017-05-16 16:00:48",
+                    "type": "app",
+                    "NAME": "交警APP",
+                    "IFUSE": "y"
+                  }
+                ],
+                "id": "c217652e-ef86-4b8f-9136-2306509d53a4",
+                "org": "新疆分部",
+                "updateTime": "2017-05-27 16:32:50",
+                "realName": "李灵杰",
+                "createTime": "2017-05-03 17:19:19",
+                "phone": "13111111115",
+                "ifuse": "y"
+              },
+              {
+                "mail": "1@1",
+                "orderNum": "2",
+                "policeNum": "161",
+                "type": "user",
+                "identityCode": "8",
+                "orgId": "3614bcee-06a1-4639-a352-eaee4538145c",
+                "id": "ccfba1b7-2450-48cb-8a5b-bf1ab1bf6e41",
+                "org": "新疆分部",
+                "updateTime": "2017-05-27 16:32:50",
+                "realName": "正事儿",
+                "createTime": "2017-04-18 15:39:07",
+                "phone": "13111111116",
+                "ifuse": "y"
+              },
+              {
+                "mail": "1@1",
+                "orderNum": "1",
+                "policeNum": "171",
+                "type": "user",
+                "identityCode": "9",
+                "orgId": "3614bcee-06a1-4639-a352-eaee4538145c",
+                "id": "d613ff58-7607-4f8c-b1fd-afe1ab43f55d",
+                "org": "新疆分部",
+                "updateTime": "2017-05-27 16:32:50",
+                "realName": "王琦",
+                "createTime": "2017-04-18 15:30:23",
+                "phone": "15111111117",
+                "ifuse": "y"
+              },
+              {
+                "gender": "性别",
+                "mail": "m18610522372@163.com",
+                "nation": "民族",
+                "orderNum": "0",
+                "policeNum": "181",
+                "type": "user",
+                "identityCode": "10",
+                "orgId": "3614bcee-06a1-4639-a352-eaee4538145c",
+                "children": [
+                  {
+                    "ORDERNUM": "1",
+                    "UPDATETIME": "2017-05-16 16:00:48",
+                    "DESCRIPTION": "移动执法",
+                    "appId": "d97b4372-c901-4c1e-96bf-dcf2f858c253",
+                    "communicationId": "zhangsi",
+                    "ID": "63fd162c-28be-44d8-8703-9e23894a87e7",
+                    "CREATETIME": "2017-05-16 16:00:48",
+                    "type": "app",
+                    "NAME": "交警APP",
+                    "IFUSE": "y"
+                  },
+                  {
+                    "ORDERNUM": "1",
+                    "UPDATETIME": "2017-05-16 16:00:48",
+                    "DESCRIPTION": "移动执法",
+                    "appId": "a1",
+                    "communicationId": "douya",
+                    "ID": "63fd162c-28be-44d8-8703-9e23894a87e7",
+                    "CREATETIME": "2017-05-16 16:00:48",
+                    "type": "app",
+                    "NAME": "交警APP",
+                    "IFUSE": "y"
+                  },
+                  {
+                    "ORDERNUM": "3",
+                    "UPDATETIME": "2017-05-16 16:00:48",
+                    "DESCRIPTION": "民警执法",
+                    "appId": "a4",
+                    "communicationId": "test4",
+                    "ID": "c7cdfd53-49c6-11e7-80f4-80f755c5dd04",
+                    "CREATETIME": "2017-05-16 16:00:48",
+                    "type": "app",
+                    "NAME": "民警APP",
+                    "IFUSE": "y"
+                  },
+                  {
+                    "ORDERNUM": "3",
+                    "UPDATETIME": "2017-05-16 16:00:48",
+                    "DESCRIPTION": "民警执法",
+                    "appId": "a1af589d-c4d7-4cac-9cd3-6a57ea33cbcf",
+                    "communicationId": "sunhongyu2",
+                    "ID": "c7cdfd53-49c6-11e7-80f4-80f755c5dd04",
+                    "CREATETIME": "2017-05-16 16:00:48",
+                    "type": "app",
+                    "NAME": "民警APP",
+                    "IFUSE": "y"
+                  }
+                ],
+                "id": "u1",
+                "org": "新疆分部",
+                "nickName": "昵称",
+                "politicalStatus": "政治面貌",
+                "updateTime": "2017-06-08 15:45:23",
+                "birthDate": "生日",
+                "picture": "http://192.168.6.70:8082/my/sunhongyu220170608085030.jpg",
+                "realName": "张三",
+                "createTime": "2017-01-13 12:12:12",
+                "phone": "18610522372",
+                "nativePlace": "籍贯",
+                "ifuse": "y",
+                "maritalStatus": "婚姻状况"
+              }
+            ],
+            "orgName": "新疆分部"
+          }
+        ],
+        "orgName": "项目部"
+      },
+      {
+        "updateTime": "2017-05-26 21:11:12",
+        "parentId": "1",
+        "ifuse": "y",
+        "type": "org",
+        "parentName": "航天长峰",
+        "id": "a07d1b93-855d-4636-a5ae-575f45d0f6b5",
+        "leader": "张三5",
+        "createTime": "2017-05-05 14:50:49",
+        "children": [
+          {
+            "updateTime": "2017-05-25 00:26:06",
+            "leader": "付总",
+            "parentId": "a07d1b93-855d-4636-a5ae-575f45d0f6b5",
+            "ifuse": "y",
+            "type": "org",
+            "createTime": "2017-05-25 00:26:06",
+            "parentName": "研发部",
+            "id": "5a9ed7fd-47a8-4850-b535-aba5a9ae2257",
+            "orgName": "成都分部"
+          },
+          {
+            "updateTime": "2017-05-25 21:45:32",
+            "parentId": "a07d1b93-855d-4636-a5ae-575f45d0f6b5",
+            "ifuse": "y",
+            "type": "org",
+            "parentName": "研发部",
+            "id": "2dd17e9e-943d-49a6-a0ea-8f0e73d8ddb6",
+            "leader": "兄台",
+            "createTime": "2017-05-25 21:45:32",
+            "children": [
+              {
+                "updateTime": "2017-05-26 20:25:18",
+                "leader": "张总",
+                "parentId": "2dd17e9e-943d-49a6-a0ea-8f0e73d8ddb6",
+                "ifuse": "y",
+                "type": "org",
+                "createTime": "2017-05-25 21:45:51",
+                "parentName": "上海分部",
+                "id": "8de844bc-89c7-40e4-af6b-0017c8547868",
+                "orgName": "大数据组"
+              }
+            ],
+            "orgName": "上海分部"
+          },
+          {
+            "updateTime": "2017-05-26 22:14:01",
+            "parentId": "a07d1b93-855d-4636-a5ae-575f45d0f6b5",
+            "ifuse": "y",
+            "type": "org",
+            "parentName": "研发部",
+            "id": "e0502c03-e130-4f70-bec9-32f1fd22d48f",
+            "leader": "广总",
+            "createTime": "2017-05-26 21:56:52",
+            "children": [
+              {
+                "mail": "1@1",
+                "orderNum": "1",
+                "policeNum": "121",
+                "type": "user",
+                "identityCode": "3",
+                "orgId": "e0502c03-e130-4f70-bec9-32f1fd22d48f",
+                "children": [
+                  {
+                    "ORDERNUM": "2",
+                    "UPDATETIME": "2017-05-16 16:00:48",
+                    "DESCRIPTION": "刑警执法",
+                    "appId": "a2",
+                    "communicationId": "test2",
+                    "ID": "a5ada5bf-49c6-11e7-80f4-80f755c5dd04",
+                    "CREATETIME": "2017-05-16 16:00:48",
+                    "type": "app",
+                    "NAME": "刑警APP",
+                    "IFUSE": "y"
+                  }
+                ],
+                "id": "82233edf-918b-402d-9ba4-bd94664b2a36",
+                "org": "广州分部",
+                "updateTime": "2017-05-27 16:33:27",
+                "realName": "赵六",
+                "createTime": "2017-04-18 15:28:36",
+                "phone": "13111111112",
+                "ifuse": "y"
+              },
+              {
+                "mail": "1@1",
+                "orderNum": "1",
+                "policeNum": "131",
+                "type": "user",
+                "identityCode": "4",
+                "orgId": "e0502c03-e130-4f70-bec9-32f1fd22d48f",
+                "id": "a702d3e4-5049-4d16-9dca-98bc0d121724",
+                "org": "广州分部",
+                "updateTime": "2017-05-27 16:33:27",
+                "realName": "李四",
+                "createTime": "2017-04-18 15:05:37",
+                "phone": "13111111113",
+                "ifuse": "y"
+              }
+            ],
+            "orgName": "广州分部"
+          }
+        ],
+        "orgName": "研发部"
+      }
+    ],
+    "orgName": "航天长峰"
+  }
+]

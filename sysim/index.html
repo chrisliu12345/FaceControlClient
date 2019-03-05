@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>XX市公安局合作作战平台</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+		<link href="fonts/iconfont.css" rel="stylesheet" />
+		<link href="css/chat.css" rel="stylesheet" />
+		<link href="css/index.css" rel="stylesheet" />
+		<script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/webim.config.js"></script>
+        <script src="js/strophe-1.2.8.min.js"></script>
+        <!--<script src="js/websdk-1.4.10.js"></script>-->
+        <script src="js/websdk-1.4.11.js"></script>
+        <script src="fonts/iconfont.js"></script>
+        <script src="js/service.js"></script>
+        <script src="js/controller/NewsListCtrl.js"></script>
+        <script src="js/controller/NewsDetailCtrl.js"></script>
+        <script src="js/controller/ContractListCtrl.js"></script>
+        <script src="js/controller/ImPanelCtrl.js"></script>
+        <script src="js/controller/LoginCtrl.js"></script>
+        <script src="js/model/User.js"></script>
+        <script src="js/model/News.js"></script>
+
+	</head>
+	<body ng-app="imApp" ng-controller="IndexCtrl">
+	    <!--导航条-->
+	    <nav class="navbar navbar-default navbar-static-top im-navbar">
+            <div class="container-fluid">
+                <div class="navbar-left">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo" src="images/logo.png" />
+                    </a>
+                    <label class="navbar-text">XX市公安局合作作战平台</label>
+                </div>
+                <div class="navbar-right" ng-show="user.status==1">
+                    <img class="avatar" ng-src="{{user.avatar}}" />
+                    <span class="navbar-text">{{user.name}}</span>
+                    <button type="button" class="btn btn-link navbar-btn" ng-click='logout()'>退出</button>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-3 ">
+                    <!--警情列表 警情详情-->
+                    <news-list></news-list>
+                    <news-detail></news-detail>
+                </div>
+                <div class="col-xs-9">
+                    <!-- im主题区域 -->
+                    <div class="row">
+                        <div class="col-xs-3 contract-panel">
+                            <!--通讯录列表-->
+                            <contract-list></contract-list>
+                        </div>
+                        <div class="col-xs-9 im-panel">
+                            <!-- 聊天区 -->
+                            <im-panel></im-panel>
+                        </div>
+                    </div>
+                    <!--登录框-->
+                    <login></login>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>

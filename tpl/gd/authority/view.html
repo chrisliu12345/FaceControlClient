@@ -1,0 +1,57 @@
+<form name="form" role="form" class="form-horizontal form-validation">
+    <div class="modal-header">
+        <h3 class="modal-title" align="center">权限详情</h3>
+    </div>
+    <div class="modal-body">
+
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>权限名称</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="authority.authorityName"
+                       readonly>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>权限描述</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="authority.description" readonly/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>更新时间</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="authority.updateTime" readonly/>
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>排序编号</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="authority.orderNum" readonly/>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button"  ng-click="viewVm.submit()">提交</button>
+        <button class="btn btn-warning" type="button" ng-click="viewVm.cancel()">取消</button>
+    </div>
+
+</form>

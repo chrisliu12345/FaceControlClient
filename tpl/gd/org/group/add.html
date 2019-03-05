@@ -1,0 +1,25 @@
+<form name="form1" role="form" class="form-horizontal form-validation">
+    <div class="modal-header">
+        <h3 class="modal-title" align="center">新增</h3>
+    </div>
+    <div class="modal-body">
+
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>组名称</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="gro.name" name="Name" placeholder="不能为空，可以为中文、英文、中英混合"
+                       required>
+                <div class="error" ng-show="form1.Name.$dirty && form1.Name.$invalid" style="color:#F00">
+                    <small class="error" ng-show="form1.Name.$error.required">不能为空</small>
+                </div>
+            </div>
+        </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-disabled="form.$invalid" ng-click="addVm.submit()">提交</button>
+        <button class="btn btn-warning" type="button" ng-click="addVm.cancel()">取消</button>
+    </div>
+
+</form>

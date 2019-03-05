@@ -1,0 +1,28 @@
+<div class="modal-body">
+    <div class="wrapper-md">
+
+        <tree-grid
+                tree-data="tree_data"
+                tree-control="my_tree"
+                expand-on="expanding_property"
+                icon-leaf=" glyphicon glyphicon-globe"
+                on-click="my_tree_handler(branch)"
+        ></tree-grid>
+
+        <div ng-click="my_tree.expand_all()" class="btn btn-primary btn-sm btn-addon">
+            <i class="fa fa-expand"></i> 展开所有</div>
+        <!--<div ng-click="my_tree.collapse_all()" class="btn btn-info btn-sm btn-rounded">折叠所有</div>-->
+        <!--<p style="padding:20px;vertical-align:top;">-->
+        <!--<div style="width:300px" class="alert alert-warning">-->
+        <!--"您选择了: " {{ outputName }}-->
+        <!--<br>-->
+        <!--"id: "{{outputId}}-->
+        <!--</div>-->
+        <!--</p>-->
+    </div>
+</div>
+
+<div class="modal-footer">
+    <div class="btn btn-success btn-sm " ng-disabled="!showConfirmButton" ng-click="batchUpdateUserOrg()"> 确认</div>
+    <div class="btn btn-info btn-sm " ng-click="cancelbatchUpdateUserOrg()"> 取消</div>
+</div>

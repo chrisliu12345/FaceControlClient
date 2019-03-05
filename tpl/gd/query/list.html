@@ -1,0 +1,59 @@
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
+    app.settings.asideFolded = false;
+    app.settings.asideDock = false;
+  ">
+    <div class="wrapper-md" ng-controller="QueryCtrl as showCase">
+        <div class="panel panel-default">
+            <div class="panel-heading" style="height: 40px">
+
+
+                <ul class="nav navbar-nav">
+                    <li class="{{ui==1? 'active':''}}">
+                        <a href="javaScript:void(0)"  data-toggle="li" ng-click="showCase.select_to_item(1)" >
+                        <span  class="label label-info" id="checkPicture">
+                           检测图像历史记录查询
+                        </span>
+                        </a>
+                    </li>
+                   <!-- <li class="{{ui==2? 'active':''}}" ng-show="yincang">
+                        <a href="javaScript:void(0)"  data-toggle="li" ng-click="showCase.select_to_item(2)">
+                       <span id="queryAll">综合查询
+                       </span>
+                    </a>
+                    </li>
+                    <li class="{{ui==3? 'active':''}}" ng-show="yincang">
+                        <a href="javaScript:void(0)"  data-toggle="li" ng-click="showCase.select_to_item(3)">
+                        <span id="queryClass">
+                            部门考勤统计
+                            </span>
+                        </a>
+                    </li>
+                    <li class="{{ui==4? 'active':''}}">
+                        <a href="javaScript:void(0)"  data-toggle="li" ng-click="showCase.select_to_item(4)" >
+                            <span id="queryPerson">个人考勤统计</span>
+                        </a>
+                    </li>-->
+
+                </ul>
+
+            </div>
+            <br>
+            <div class="row wrapper" ng-switch="name">
+                <div ng-switch-default="1">
+                    <div ng-include="'tpl/gd/query/detectImages.html'" ng-controller="DectCtrl as showCase"></div>
+                </div>
+                <div ng-switch-when="2">
+                    <div ng-include="'tpl/gd/query/queryAll.html'" ng-controller="QuAllCtrl as showCase"></div>
+                </div>
+                <div  ng-switch-when="3">
+                    <div ng-include="'tpl/gd/query/attendanceStatistics.html'" ng-controller="AttStCtrl as showCase"></div>
+                </div>
+                <div  ng-switch-when="4">
+                    <div ng-include="'tpl/gd/query/personalAttendance.html'" ng-controller="PerAttCtrl as showCase"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+

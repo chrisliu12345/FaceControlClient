@@ -1,0 +1,119 @@
+<link rel="stylesheet" href="../../../css/bootstrapStyle/bootstrapStyle.css" type="text/css">
+<!--<script type="text/javascript" src="../../../sysim/js/jquery.min.js"></script>-->
+<script type="text/javascript" src="../../../sysim/zTree/jquery.ztree.all.js"></script>
+<style>
+    #menu{
+        width: 0; /*设置为0 隐藏自定义菜单*/
+        height: 125px;
+        overflow: hidden; /*隐藏溢出的元素*/
+        box-shadow: 0 1px 1px #888,1px 0 1px #ccc;
+        position: absolute; /*自定义菜单相对与body元素进行定位*/
+    }
+    .menu{
+        width: 130px;
+        height: 25px;
+        line-height: 25px;
+        padding: 0 10px;
+    }
+    #menu1{
+        width: 0; /*设置为0 隐藏自定义菜单*/
+        height: 125px;
+        overflow: hidden; /*隐藏溢出的元素*/
+        box-shadow: 0 1px 1px #888,1px 0 1px #ccc;
+        position: absolute; /*自定义菜单相对与body元素进行定位*/
+    }
+    .menu1{
+        width: 130px;
+        height: 25px;
+        line-height: 25px;
+        padding: 0 10px;
+    }
+</style>
+
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
+    app.settings.asideFolded = false;
+    app.settings.asideDock = false;
+  " >
+    <div class="wrapper-md col-md-3" ng-controller="orgCtrl as showCase">
+            <div  style="height:600px; overflow:auto"  >
+                <ul   my-dir class="ztree"  id="treeDemo"></ul>
+            </div>
+
+        <div id="menu">
+            <ul>
+
+                <li style="list-style-type:decimal;"><button type="button" class="btn btn-info btn-xs" ng-click="addGroupRight()">添加组</button></li>
+                <li style="list-style-type:decimal;"><button type="button" class="btn btn-info btn-xs" ng-click="editGroupRight()">编辑组</button></li>
+                <li style="list-style-type:decimal;"><button type="button" class="btn btn-info btn-xs" ng-click="deleteGroupRight()">删除组</button></li>
+               <!-- <li style="list-style-type:decimal;"><button type="button" class="btn btn-info btn-xs" ng-click="addPeopleRight()">添加人员</button></li>-->
+                <li style="list-style-type:decimal;"><button type="button" class="btn btn-info btn-xs" ng-click="exportGroupsRight()">导出组织机构</button></li>
+
+            </ul>
+        </div>
+       <!-- <div id="menu1">
+            <ul>
+                <li style="list-style-type:decimal;"><button type="button" class="btn btn-info btn-xs" ng-click="editPeopleRight()">编辑人员信息</button></li>
+                <li style="list-style-type:decimal;"><button type="button" class="btn btn-info btn-xs" ng-click="deletePeopleRight()">删除该人员</button></li>
+            </ul>
+        </div>-->
+    </div>
+    <div class="wrapper-md" ng-controller="userCtrl as showCase">
+        <div class="panel panel-default col-md-9"  >
+            <div class="panel-heading" >
+                <ul class="nav nav-pills pull-right">
+                    <li style=" padding-top:4px; padding-right:4px">
+                        <!--<button class="btn m-b-xs btn-sm btn-primary btn-addon" ng-click="showCase.batchUpdateUserOrg()"
+                                ng-disabled="!showBatchUpdateUserOrgButton"><i
+                                class="fa fa-adjust" ng-disabled="!showBatchUpdateUserOrgButton"></i>调整部门
+                        </button>-->
+                      <!--  <button class="btn m-b-xs btn-sm btn-success btn-addon" ng-click="showCase.addUsers()"><i
+                                class="fa fa-plus"></i>批量导入人员
+                        </button>-->
+                        <button class="btn m-b-xs btn-sm btn-info btn-addon" ng-click="showCase.addUser()"><i
+                                class="fa fa-plus"></i>单人注册
+                        </button>
+                        <button class="btn m-b-xs btn-sm  btn-primary btn-addon" ng-click="showCase.addUsersPic()"><i
+                                class="fa fa-plus"></i>人员批量注册
+                        </button>
+                       <!-- <button class="btn m-b-xs btn-sm btn-success btn-addon" ng-click="showCase.batchExitUser()"
+                                ng-disabled="!showBatchUpdateUserOrgButton"><i
+                                class="	glyphicon glyphicon-tags" ng-disabled="!showBatchUpdateUserOrgButton"></i>调整部门
+                        </button>
+                        <button class="btn m-b-xs btn-sm btn-success btn-addon" ng-click="showCase.speakToVoice()">
+                            <i class="	glyphicon glyphicon-tags"></i>语音合成
+                        </button>-->
+                        <button class="btn m-b-xs btn-sm btn-danger btn-addon" ng-click="showCase.batchDeleteUser()"
+                                ng-disabled="!showBatchUpdateUserOrgButton"><i
+                                class="fa fa-adjust" ng-disabled="!showBatchUpdateUserOrgButton"></i>批量删除
+                        </button>
+
+                    </li>
+
+                </ul>
+                人员列表
+            </div>
+            <div class="row wrapper">
+
+                <div>
+                    <form class="form-inline" ng-submit="showCase.addUser()">
+                        <table datatable id="userList" dt-dataset="dtDataset" dt-options="dtOptions" dt-columns="dtColumns"
+                               class="table table-striped table-bordered">
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div  ng-show="waitVoice" id="voiceId" style="position:absolute; left:-1px; top:1px; width:100%; height:100%; background-color:rgba(0,0,0,0.2); z-index:1000;">
+            <div id="center" align="center" style="position:absolute;left:40%; top:40%;">
+
+                <div class="form-group">
+                    <div class="col-md-9">
+                        <img src="/img/A4.gif">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

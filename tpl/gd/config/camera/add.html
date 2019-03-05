@@ -1,0 +1,117 @@
+<form name="form" role="form" class="form-horizontal form-validation">
+    <div class="modal-header">
+        <h3 class="modal-title" align="center ">新增摄像机</h3>
+    </div>
+    <div class="modal-body">
+
+        <!--<div class="form-group">
+            <div class="col-md-3">
+                <label> 服务摄像机：</label>
+            </div>
+
+            <div class="col-md-9">
+                <select ng-model="camera.ServiceCameraId" class="form-control ">
+                    <option ng-repeat="x in CameraIds" value="{{x.ResID}}">{{x.ResID}}-{{x.IPAddress}}</option>
+                </select>
+            </div>
+        </div>-->
+        <div class="form-group">
+            <div class="col-md-3">
+                <label> 摄像机类型：</label>
+            </div>
+
+            <div class="col-md-9">
+                <select ng-model="camera.ProtocolType" class="form-control" ng-init="camera.ProtocolType='HIK'">
+                    <option value="HIK">海康
+                    <option value="DH">大华
+                    <option value="UNIVIEW">宇视
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-3">
+                <label> 选择服务IP：</label>
+            </div>
+
+            <div class="col-md-9">
+                <select ng-model="camera.ServiceIP" class="form-control" ng-init="camera.ProtocolType='HIK'">
+                    <option ng-repeat="x in csServices" value="{{x.ServiceId}}">{{x.ServiceIp}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group" >
+            <div class="col-md-3">
+                <label>布控地点：</label>
+            </div>
+
+            <div class="col-md-9">
+                <select ng-model="camera.location" class="form-control " >
+                    <option ng-repeat="x in locations" value="{{x.AttendanceLocationID}}">{{x.AttendanceLocationName}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-3">
+                <label> 位置名称：</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="camera.Site" placeholder="必填，例如：公司大厅" required>
+            </div>
+        </div>
+       <!-- <div class="form-group">
+            <div class="col-md-3">
+                <label> 摄像机URL：</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="camera.url" >
+            </div>
+        </div>-->
+        <div class="form-group">
+            <div class="col-md-3">
+                <label> IP地址：</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="camera.url" placeholder="必填，例如：192.168.5.22" ng-pattern="/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/"  required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-3">
+                <label> 用户名：</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="camera.username" placeholder="必填，例如：admin" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-3">
+                <label> 密码：</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="camera.password" placeholder="必填，例如：123456" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-3">
+                <label> 任务类型：</label>
+            </div>
+
+            <div class="col-md-9">
+                <select ng-model="camera.TaskType" class="form-control" ng-init="camera.TaskType='0'">
+                    <option value="0">入口
+                    <option value="1">出口
+                    <option value="2">出入口
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-disabled="form.$invalid" ng-click="addVm.submit()">提交</button>
+        <button class="btn btn-warning" ng-click="addVm.cancel()">取消</button>
+    </div>
+
+</form>

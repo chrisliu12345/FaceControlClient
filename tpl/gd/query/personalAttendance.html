@@ -1,0 +1,123 @@
+<link rel="stylesheet" href="../../../datatime/timepicker/css/bootstrap-datetimepicker.min.css">
+<script src="../../../datatime/timepicker/bootstrap-datetimepicker.js"></script>
+<script src="../../../datatime/timepicker/bootstrap-datetimepicker.fr.js"></script>
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
+    app.settings.asideFolded = false;
+    app.settings.asideDock = false;
+  ">
+    <div class="wrapper-md">
+        <div class="col-md-1">
+
+        </div>
+        <div class="panel panel-default col-md-12">
+            <div class="panel-heading" style="height: 100px;white-space: nowrap;">
+
+                <ul class="nav  nav-pills pull-right">
+                    <li style=" padding-top:4px; padding-right:4px;text-align: center;" >
+                        <table>
+                            <tr >
+                                <td style="float: left">
+                                    <div class="form-group" >
+                                        <div class="col-md-4">
+                                            <label style="width: auto;margin: 5px 0px" >组:</label>
+                                        </div>
+
+                                        <div class="col-md-7" >
+                                            <select ng-model="$parent.org11" class="form-control" ng-show="admin" ng-change="checkName()">
+                                                <option ng-repeat="x in groups" value="{{x.parentName}}|{{x.orgName}}|{{x.id}}">{{x.parentName}}--{{x.orgName}}</option>
+                                            </select>
+                                           <span ng-show="person">{{org11}}</span>
+                                           <!-- <input class="form-control"type="text" value="" ng-model="$parent.org11" ng-show="person" disabled>-->
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group" >
+                                        <div class="col-md-4">
+                                            <label  style="width: auto;margin: 5px 0px" >日期:</label>
+                                        </div>
+                                        <div ng-model='timepickerTest1' ng-time-b
+                                             class="input-group date form_date col-md-8" data-date=""
+                                             data-date-format="yyyy-MM-dd" data-link-field="dtp_input1"
+                                             data-link-format="yyyy-mm-dd">
+                                            <input class="form-control" size="16" type="text" value="" ng-model="$parent.Start">
+                                            <span class="input-group-addon"><span
+                                                    class="glyphicon glyphicon-remove"></span></span>
+                                            <span class="input-group-addon"><span
+                                                    class="glyphicon glyphicon-calendar"></span></span>
+                                        </div>
+                                        <input type="hidden" id="dtp_input1" value=""/>
+                                    </div>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                    <div  class="form-group" >
+                                        <div class="col-md-4">
+                                            <label style="width: auto;margin: 5px 0px">-&#45;&#45;</label>
+                                        </div>
+                                        <div ng-model='timepickerTest2' ng-time-b
+                                             class="input-group date form_date col-md-8" data-date=""
+                                             data-date-format="yyyy-MM-dd" data-link-field="dtp_input2"
+                                             data-link-format="yyyy-mm-dd">
+                                            <input class="form-control" size="16" type="text" value="" ng-model="$parent.End">
+                                            <span class="input-group-addon"><span
+                                                    class="glyphicon glyphicon-remove"></span></span>
+                                            <span class="input-group-addon"><span
+                                                    class="glyphicon glyphicon-calendar"></span></span>
+                                        </div>
+                                        <input type="hidden" id="dtp_input2" value=""/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group" style="float:left; display:inline;">
+
+                                        <div class="col-md-12">
+                                            <button class="btn m-b-xs btn-sm btn-primary" style="margin: 0px 50px" ng-click="showCase.queryPerson()">查询
+                                            </button>
+                                            <!--<button class="btn m-b-xs btn-sm btn-primary" style="margin: 0px 20px" ng-click="showCase.export_records()">导出记录
+                                            </button>-->
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td >
+                                    <div class="form-group" >
+                                        <div class="col-md-4">
+                                            <label style="width: auto;margin: 5px 0px" >姓名:</label>
+                                        </div>
+
+                                        <div class="col-md-7">
+                                           <!-- <input type="text" class="form-control" ng-model="$parent.realName" ng-disabled="$parent.ii">-->
+                                            <select ng-model="$parent.realName" class="form-control" ng-show="admin">
+                                                <option ng-repeat="x in namelist" value="{{x.CollectId}}">{{x.realName}}</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </li>
+
+                </ul>
+            </div>
+            <div class="row wrapper" >
+
+                <div style="height: 30px"></div>
+                <div>
+                    <form class="form-inline">
+                        <table datatable id="DetectList" dt-dataset="dtDataset" dt-options="dtOptions"
+                               dt-columns="dtColumns"
+                               class="table table-striped table-bordered">
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

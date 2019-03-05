@@ -1,0 +1,1921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/sysim/css/chat.css" line="181" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="840b2d28-5ac9-4c07-9b99-848fcf4f7647" name="Default" comment="修复-- IMdd聊" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="zhy_webclient" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/camerajs/addtbl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3510">
+              <caret line="130" column="17" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/camera.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6642">
+              <caret line="246" column="157" selection-start-line="245" selection-start-column="156" selection-end-line="246" selection-end-column="157" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/camerajs/delete.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1431">
+              <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/camerajs/add.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2997">
+              <caret line="111" column="28" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpl/gd/config/camera.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="17" column="21" selection-start-line="10" selection-start-column="15" selection-end-line="17" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpl/gd/config/list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1755">
+              <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/gd/controllers/face/video.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5508">
+              <caret line="204" column="21" selection-start-line="204" selection-start-column="21" selection-end-line="204" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/gd/controllers/user/add.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="119" column="39" selection-start-line="119" selection-start-column="39" selection-end-line="119" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/config.router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1836">
+              <caret line="68" column="80" selection-start-line="68" selection-start-column="80" selection-end-line="68" selection-end-column="80" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>login-form</find>
+      <find>FaceCtrl</find>
+      <find>8081</find>
+      <find>menu</find>
+      <find>么nu</find>
+      <find>么n</find>
+      <find>么</find>
+      <find>m</find>
+      <find>me</find>
+      <find>men</find>
+      <find>menu2</find>
+      <find>Query.get</find>
+      <find>temp</find>
+      <find>menu1</find>
+      <find>videoCamera</find>
+      <find>vm.users</find>
+      <find>callBack</find>
+      <find>deps</find>
+      <find>$ocLazyLoad</find>
+      <find>webfonts</find>
+      <find>index.html</find>
+      <find>change</find>
+      <find>sendCs</find>
+      <find>console.log</find>
+      <find>部门</find>
+      <find>北京航天</find>
+      <find>考勤</find>
+      <find>工号</find>
+      <find>layui</find>
+      <find>addPicture</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>updown</replace>
+      <replace>res</replace>
+      <replace>selectone</replace>
+      <replace>selectDay</replace>
+      <replace>CameraService</replace>
+      <replace>QueryService</replace>
+      <replace>$scope.cameraList.Start</replace>
+      <replace>组</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>E:\ide_space\zhy_webclient\tpl\gd\app</dir>
+      <dir>E:\ide_space\zhy_webclient</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="陈肖 &lt;chenxiao@cf.local&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GotoFileConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="AIDL" />
+      <filtered-out-file-type name="APK" />
+      <filtered-out-file-type name="ARCHIVE" />
+      <filtered-out-file-type name="ASP" />
+      <filtered-out-file-type name="ActionScript" />
+      <filtered-out-file-type name="Adobe Photoshop" />
+      <filtered-out-file-type name="Allocations" />
+      <filtered-out-file-type name="Android Nine-Patch" />
+      <filtered-out-file-type name="Android RenderScript" />
+      <filtered-out-file-type name="AndroidDataBinding" />
+      <filtered-out-file-type name="AspectJ" />
+      <filtered-out-file-type name="C#" />
+      <filtered-out-file-type name="C++" />
+      <filtered-out-file-type name="CFML" />
+      <filtered-out-file-type name="CLASS" />
+      <filtered-out-file-type name="CSS" />
+      <filtered-out-file-type name="CoffeeScript" />
+      <filtered-out-file-type name="Cucumber" />
+      <filtered-out-file-type name="DATASOURCE_STORAGE" />
+      <filtered-out-file-type name="DTD" />
+      <filtered-out-file-type name="Database Element" />
+      <filtered-out-file-type name="Drools" />
+      <filtered-out-file-type name="ECMAScript 6" />
+      <filtered-out-file-type name="EJB" />
+      <filtered-out-file-type name="EJB QL" />
+      <filtered-out-file-type name="Eclipse" />
+      <filtered-out-file-type name="EclipseLink QL" />
+      <filtered-out-file-type name="Enforced Plain Text" />
+      <filtered-out-file-type name="Erlang" />
+      <filtered-out-file-type name="FTL" />
+      <filtered-out-file-type name="Flow" />
+      <filtered-out-file-type name="GFX Trace" />
+      <filtered-out-file-type name="GSP" />
+      <filtered-out-file-type name="GUI_DESIGNER_FORM" />
+      <filtered-out-file-type name="Groovy" />
+      <filtered-out-file-type name="H2 Database" />
+      <filtered-out-file-type name="HTML" />
+      <filtered-out-file-type name="Haml" />
+      <filtered-out-file-type name="Haskell" />
+      <filtered-out-file-type name="Hibernate QL" />
+      <filtered-out-file-type name="Hprof" />
+      <filtered-out-file-type name="IDEA_MODULE" />
+      <filtered-out-file-type name="IDEA_PROJECT" />
+      <filtered-out-file-type name="IDEA_WORKSPACE" />
+      <filtered-out-file-type name="IDL" />
+      <filtered-out-file-type name="Images" />
+      <filtered-out-file-type name="J2EEModule" />
+      <filtered-out-file-type name="JAVA" />
+      <filtered-out-file-type name="JPA QL" />
+      <filtered-out-file-type name="JQL" />
+      <filtered-out-file-type name="JSCS" />
+      <filtered-out-file-type name="JSHint" />
+      <filtered-out-file-type name="JSON" />
+      <filtered-out-file-type name="JSON Schema" />
+      <filtered-out-file-type name="JSP" />
+      <filtered-out-file-type name="JSPX" />
+      <filtered-out-file-type name="JSX Harmony" />
+      <filtered-out-file-type name="JavaFX" />
+      <filtered-out-file-type name="JavaScript" />
+      <filtered-out-file-type name="KJSM" />
+      <filtered-out-file-type name="Kotlin" />
+      <filtered-out-file-type name="Layout Inspector" />
+      <filtered-out-file-type name="Less" />
+      <filtered-out-file-type name="Literate CoffeeScript" />
+      <filtered-out-file-type name="MXML" />
+      <filtered-out-file-type name="Manifest" />
+      <filtered-out-file-type name="Markdown" />
+      <filtered-out-file-type name="Native" />
+      <filtered-out-file-type name="PATCH" />
+      <filtered-out-file-type name="PHP" />
+      <filtered-out-file-type name="PLAIN_TEXT" />
+      <filtered-out-file-type name="PeristenceUnit" />
+      <filtered-out-file-type name="Perl" />
+      <filtered-out-file-type name="Play" />
+      <filtered-out-file-type name="ProGuard File" />
+      <filtered-out-file-type name="Properties" />
+      <filtered-out-file-type name="RNG Compact" />
+      <filtered-out-file-type name="RegExp" />
+      <filtered-out-file-type name="ResourceBundle" />
+      <filtered-out-file-type name="SCSS" />
+      <filtered-out-file-type name="SPI" />
+      <filtered-out-file-type name="SQL" />
+      <filtered-out-file-type name="SQLite Database" />
+      <filtered-out-file-type name="SWF" />
+      <filtered-out-file-type name="Sass" />
+      <filtered-out-file-type name="Scratch" />
+      <filtered-out-file-type name="Servlet" />
+      <filtered-out-file-type name="SourceMap" />
+      <filtered-out-file-type name="Spring Data QL" />
+      <filtered-out-file-type name="Stylus" />
+      <filtered-out-file-type name="TML" />
+      <filtered-out-file-type name="TSLint" />
+      <filtered-out-file-type name="ThymeleafExpressions" />
+      <filtered-out-file-type name="TypeScript" />
+      <filtered-out-file-type name="TypeScript JSX" />
+      <filtered-out-file-type name="UML" />
+      <filtered-out-file-type name="UNKNOWN" />
+      <filtered-out-file-type name="VTL" />
+      <filtered-out-file-type name="VmTrace" />
+      <filtered-out-file-type name="XHTML" />
+      <filtered-out-file-type name="XML" />
+      <filtered-out-file-type name="YAML" />
+      <filtered-out-file-type name="YouTrack" />
+      <filtered-out-file-type name="dependency diagram" />
+      <filtered-out-file-type name="kotlin_builtins" />
+      <filtered-out-file-type name="kotlin_module" />
+      <filtered-out-file-type name="spring.factories" />
+    </file-type-list>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/js/gd/controllers/user/callBack.js" />
+        <option value="$PROJECT_DIR$/tpl/gd/user/adds.html" />
+        <option value="$PROJECT_DIR$/sysim/css/login.css" />
+        <option value="$PROJECT_DIR$/tpl/gd/auth/login1.html" />
+        <option value="$PROJECT_DIR$/sysim/css/fontawesome-all.css" />
+        <option value="$PROJECT_DIR$/tpl/gd/config/bigscreen.html" />
+        <option value="$PROJECT_DIR$/js/gd/controllers/account/edit.js" />
+        <option value="$PROJECT_DIR$/tpl/gd/account/edit.html" />
+        <option value="$PROJECT_DIR$/js/gd/controllers/user/edit.js" />
+        <option value="$PROJECT_DIR$/tpl/gd/config/camera/edit.html" />
+        <option value="$PROJECT_DIR$/js/gd/controllers/config/camerajs/edit.js" />
+        <option value="$PROJECT_DIR$/tpl/gd/config/attendance_data.html" />
+        <option value="$PROJECT_DIR$/js/gd/controllers/config/attendance_data.js" />
+        <option value="$PROJECT_DIR$/tpl/gd/query/personalAttendance.html" />
+        <option value="$PROJECT_DIR$/tpl/gd/query/attendanceStatistics.html" />
+        <option value="$PROJECT_DIR$/js/gd/controllers/user/voiceBack.js" />
+        <option value="$PROJECT_DIR$/tpl/gd/user/callBack.html" />
+        <option value="$PROJECT_DIR$/tpl/gd/user/voiceBack.html" />
+        <option value="$PROJECT_DIR$/tpl/gd/config/camera.html" />
+        <option value="$PROJECT_DIR$/js/gd/controllers/config/camera.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/tpl/gd/user/edits.html" />
+        <option value="$PROJECT_DIR$/tpl/gd/user/edit.html" />
+        <option value="$PROJECT_DIR$/tpl/gd/org/list.html" />
+        <option value="$PROJECT_DIR$/tpl/gd/org/group/add.html" />
+        <option value="$PROJECT_DIR$/tpl/gd/org/group/groupDelete.html" />
+        <option value="$PROJECT_DIR$/tpl/gd/config/camera/add.html" />
+        <option value="$PROJECT_DIR$/tpl/gd/blocks/layout.html" />
+        <option value="$PROJECT_DIR$/tpl/gd/user/list.html" />
+        <option value="$PROJECT_DIR$/tpl/gd/query/list.html" />
+        <option value="$PROJECT_DIR$/js/gd/controllers/user/addsPic.js" />
+        <option value="$PROJECT_DIR$/js/gd/controllers/config/attendance.js" />
+        <option value="$PROJECT_DIR$/js/gd/controllers/user/list.js" />
+        <option value="$PROJECT_DIR$/tpl/gd/user/addsPic.html" />
+        <option value="$PROJECT_DIR$/js/gd/controllers/config/camerajs/delete.js" />
+        <option value="$PROJECT_DIR$/js/gd/controllers/query/detectImages.js" />
+        <option value="$PROJECT_DIR$/js/gd/controllers/config/camerajs/add.js" />
+        <option value="$PROJECT_DIR$/tpl/gd/auth/login - 副本.html" />
+        <option value="$PROJECT_DIR$/css/login_style.css" />
+        <option value="$PROJECT_DIR$/tpl/gd/auth/login.html" />
+        <option value="$PROJECT_DIR$/tpl/gd/face/videoregister.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/gd/controllers/config/list.js" />
+        <option value="$PROJECT_DIR$/tpl/gd/config/list.html" />
+        <option value="$PROJECT_DIR$/tpl/gd/config/attendance.html" />
+        <option value="$PROJECT_DIR$/js/gd/controllers/user/add.js" />
+        <option value="$PROJECT_DIR$/tpl/gd/config/camera/addtbl.html" />
+        <option value="$PROJECT_DIR$/tpl/gd/user/add.html" />
+        <option value="$PROJECT_DIR$/js/gd/controllers/config/camerajs/addtbl.js" />
+        <option value="$PROJECT_DIR$/js/gd/controllers/face/video.js" />
+        <option value="$PROJECT_DIR$/js/config.router.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/vendor/webim/package.json" />
+    <dismissed value="$PROJECT_DIR$/vendor/webim/sdk/package.json" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="186" />
+    <option name="y" value="46" />
+    <option name="width" value="1597" />
+    <option name="height" value="958" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="gd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="gd" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="gd" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="gd" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="camerajs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="gd" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="gd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="gd" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="gd" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="gd" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="gd" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="camera" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="gd" type="462c0819:PsiDirectoryNode" />
+              <item name="face" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="gd" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="layer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="layer" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;null&#9;null&#10;$cookieStore.put&#9;null&#9;null&#10;favicon&#9;FILE&#9;file://E:/gitlab/zhy_webclient/sysim/favicon.ico&#10;fav&#9;FILE&#9;file://E:/gitlab/zhy_webclient/vendor/webim/favicon.ico&#10;showCur&#9;null&#9;null&#10;showCu&#9;null&#9;null&#10;confirm&#9;null&#9;null&#10;AddAccountC&#9;null&#9;null&#10;AddAccount&#9;null&#9;null&#10;userCtrl&#9;null&#9;null&#10;app.&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="true" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="E:/FrConfig/zhy_server_jwt" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\FrControl\control_client\vendor" />
+      <recent name="E:\FrControl\control_client\css" />
+      <recent name="E:\FrControl\control_client\img" />
+      <recent name="E:\FrConfig\zhy_webclient\tpl\gd\user" />
+      <recent name="E:\FrConfig\zhy_webclient\js\gd\controllers\org\group" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\FrControl\control_client\vendor" />
+      <recent name="E:\FrControl\control_client\vendor\modules" />
+      <recent name="E:\FrControl\control_client\css" />
+      <recent name="E:\FrConfig\zhy_webclient\sysim\css" />
+      <recent name="E:\FrConfig\zhy_webclient\sysim\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="zhy_webclient" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="zhy_webclient" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="zhy_webclient" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="zhy_webclient" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="zhy_webclient" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="zhy_webclient" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="zhy_webclient" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ui_tree.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/zhy_webclient/tpl/ui_tree.html">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.ui_tree.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="840b2d28-5ac9-4c07-9b99-848fcf4f7647" name="Default" comment="" />
+      <created>1496277389325</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1496277389325</updated>
+      <workItem from="1496277390743" duration="15533000" />
+      <workItem from="1496361951199" duration="21008000" />
+      <workItem from="1496622545186" duration="14905000" />
+      <workItem from="1496708940303" duration="3504000" />
+      <workItem from="1496729169265" duration="12000" />
+      <workItem from="1496734122929" duration="4666000" />
+      <workItem from="1496813144967" duration="8714000" />
+      <workItem from="1496892287107" duration="4595000" />
+      <workItem from="1496903404303" duration="29711000" />
+      <workItem from="1497227776338" duration="47000" />
+      <workItem from="1497227856820" duration="3611000" />
+      <workItem from="1497232098770" duration="10094000" />
+      <workItem from="1497256651839" duration="108000" />
+      <workItem from="1497259199024" duration="796000" />
+      <workItem from="1497263420344" duration="5819000" />
+      <workItem from="1497321022439" duration="1362000" />
+      <workItem from="1497322456563" duration="1122000" />
+      <workItem from="1497335679288" duration="1219000" />
+      <workItem from="1497407048196" duration="1521000" />
+      <workItem from="1497408964715" duration="957000" />
+      <workItem from="1497419930544" duration="1469000" />
+      <workItem from="1497484886577" duration="13880000" />
+      <workItem from="1497592344417" duration="288000" />
+      <workItem from="1497594899876" duration="280000" />
+      <workItem from="1497839355310" duration="31895000" />
+      <workItem from="1497942235296" duration="37977000" />
+      <workItem from="1498181883682" duration="3080000" />
+      <workItem from="1498185426317" duration="12631000" />
+      <workItem from="1498438704049" duration="15733000" />
+      <workItem from="1498523410104" duration="3267000" />
+      <workItem from="1498541227439" duration="11549000" />
+      <workItem from="1498612506512" duration="5568000" />
+      <workItem from="1498703996937" duration="275000" />
+      <workItem from="1498788471321" duration="2589000" />
+      <workItem from="1498867849066" duration="601000" />
+      <workItem from="1499044304382" duration="20304000" />
+      <workItem from="1499130819049" duration="17127000" />
+      <workItem from="1499213244521" duration="27618000" />
+      <workItem from="1499300484041" duration="12579000" />
+      <workItem from="1499321281283" duration="2672000" />
+      <workItem from="1499332325886" duration="6000" />
+      <workItem from="1499332514380" duration="1204000" />
+      <workItem from="1499388612101" duration="9493000" />
+      <workItem from="1499405458307" duration="2876000" />
+      <workItem from="1499410151539" duration="3860000" />
+      <workItem from="1499417729458" duration="1073000" />
+      <workItem from="1499645690366" duration="1151000" />
+      <workItem from="1499647617010" duration="20442000" />
+      <workItem from="1499732181350" duration="7833000" />
+      <workItem from="1499765594942" duration="662000" />
+      <workItem from="1499837416981" duration="11648000" />
+      <workItem from="1499855332540" duration="7000" />
+      <workItem from="1499855394928" duration="1205000" />
+      <workItem from="1499904903210" duration="1689000" />
+      <workItem from="1499933931367" duration="17000" />
+      <workItem from="1499936424821" duration="3140000" />
+      <workItem from="1499991118599" duration="17837000" />
+      <workItem from="1500025720215" duration="18242000" />
+      <workItem from="1500336608142" duration="79000" />
+      <workItem from="1500336744354" duration="37000" />
+      <workItem from="1500336793463" duration="4564000" />
+      <workItem from="1500428296021" duration="21808000" />
+      <workItem from="1500625201159" duration="3742000" />
+      <workItem from="1500856418377" duration="3920000" />
+      <workItem from="1500862426387" duration="14147000" />
+      <workItem from="1500889382140" duration="1659000" />
+      <workItem from="1500897966277" duration="609000" />
+      <workItem from="1500948251228" duration="4629000" />
+      <workItem from="1500978756428" duration="8674000" />
+      <workItem from="1501039773675" duration="4522000" />
+      <workItem from="1501059943080" duration="1841000" />
+      <workItem from="1501121517721" duration="4460000" />
+      <workItem from="1501139854153" duration="26466000" />
+      <workItem from="1501394739064" duration="21000" />
+      <workItem from="1501394776077" duration="22557000" />
+      <workItem from="1501470959322" duration="19953000" />
+      <workItem from="1501546570674" duration="1880000" />
+      <workItem from="1501555199761" duration="6092000" />
+      <workItem from="1501578339278" duration="16307000" />
+      <workItem from="1501903044839" duration="279000" />
+      <workItem from="1501903777719" duration="24943000" />
+      <workItem from="1502016699269" duration="67250000" />
+      <workItem from="1502333053344" duration="1932000" />
+      <workItem from="1502939778547" duration="1796000" />
+      <workItem from="1503040168201" duration="8592000" />
+      <workItem from="1503051556100" duration="15198000" />
+      <workItem from="1503880042638" duration="16335000" />
+      <workItem from="1503975135131" duration="1079000" />
+      <workItem from="1504059789537" duration="25049000" />
+      <workItem from="1504158800730" duration="442000" />
+      <workItem from="1504159843481" duration="326000" />
+      <workItem from="1504166286451" duration="10914000" />
+      <workItem from="1505095073716" duration="314000" />
+      <workItem from="1505096220108" duration="12456000" />
+      <workItem from="1505693745593" duration="6860000" />
+      <workItem from="1505866759354" duration="77000" />
+      <workItem from="1507706755366" duration="1284000" />
+      <workItem from="1507709883994" duration="4000" />
+      <workItem from="1507712022253" duration="36443000" />
+      <workItem from="1508135509496" duration="49344000" />
+      <workItem from="1508373053312" duration="61074000" />
+      <workItem from="1508895743896" duration="1077000" />
+      <workItem from="1508915970198" duration="10556000" />
+      <workItem from="1509497542265" duration="194000" />
+      <workItem from="1509520569435" duration="871000" />
+      <workItem from="1509668233107" duration="4000" />
+      <workItem from="1510189754933" duration="10332000" />
+      <workItem from="1510217213229" duration="38944000" />
+      <workItem from="1510543746675" duration="39813000" />
+      <workItem from="1510652214134" duration="49293000" />
+      <workItem from="1510898787351" duration="10999000" />
+      <workItem from="1511139001533" duration="2792000" />
+      <workItem from="1511658987881" duration="592000" />
+      <workItem from="1511855076892" duration="1800000" />
+      <workItem from="1511941130271" duration="921000" />
+      <workItem from="1512369175037" duration="543000" />
+      <workItem from="1512615387713" duration="1616000" />
+      <workItem from="1512630302477" duration="383000" />
+      <workItem from="1513038944443" duration="4265000" />
+      <workItem from="1513043317552" duration="14516000" />
+      <workItem from="1513070748061" duration="12714000" />
+      <workItem from="1513146814901" duration="21471000" />
+      <workItem from="1513576620744" duration="14230000" />
+      <workItem from="1513645954085" duration="14416000" />
+      <workItem from="1513668472268" duration="78496000" />
+      <workItem from="1513943258550" duration="5618000" />
+      <workItem from="1513949027228" duration="34441000" />
+      <workItem from="1514036339230" duration="3533000" />
+      <workItem from="1514055803477" duration="21184000" />
+      <workItem from="1514172158928" duration="28872000" />
+      <workItem from="1514277970609" duration="1816000" />
+      <workItem from="1514336421454" duration="14880000" />
+      <workItem from="1514423487135" duration="9513000" />
+      <workItem from="1514449606659" duration="2818000" />
+      <workItem from="1514507194898" duration="13144000" />
+      <workItem from="1514883066216" duration="10799000" />
+      <workItem from="1515029223632" duration="49548000" />
+      <workItem from="1515457317808" duration="1232000" />
+      <workItem from="1515653797197" duration="5953000" />
+      <workItem from="1516062457421" duration="2001000" />
+      <workItem from="1516072430488" duration="8754000" />
+      <workItem from="1516180962882" duration="601000" />
+      <workItem from="1516235612021" duration="9944000" />
+      <workItem from="1516266211614" duration="1742000" />
+      <workItem from="1516349499452" duration="4678000" />
+      <workItem from="1516581354926" duration="32000" />
+      <workItem from="1516676615213" duration="16563000" />
+      <workItem from="1516754934156" duration="7550000" />
+      <workItem from="1516784379208" duration="178000" />
+      <workItem from="1516844982729" duration="6413000" />
+      <workItem from="1516869189699" duration="256000" />
+      <workItem from="1516873242798" duration="4078000" />
+      <workItem from="1517192296992" duration="985000" />
+      <workItem from="1517208682527" duration="1738000" />
+      <workItem from="1517295251456" duration="1390000" />
+      <workItem from="1517299122066" duration="1510000" />
+      <workItem from="1517445822703" duration="816000" />
+      <workItem from="1517818279815" duration="832000" />
+      <workItem from="1517820622697" duration="485000" />
+      <workItem from="1517822327752" duration="2000" />
+      <workItem from="1517880186756" duration="2000" />
+      <workItem from="1517885596636" duration="1012000" />
+      <workItem from="1517966608949" duration="13647000" />
+      <workItem from="1518063832631" duration="5801000" />
+      <workItem from="1518400391064" duration="8642000" />
+      <workItem from="1519258249219" duration="664000" />
+      <workItem from="1519694692009" duration="599000" />
+      <workItem from="1519958558371" duration="474000" />
+      <workItem from="1520479911916" duration="867000" />
+      <workItem from="1520820561636" duration="2679000" />
+      <workItem from="1521019841201" duration="892000" />
+      <workItem from="1521093495451" duration="633000" />
+      <workItem from="1521442464951" duration="944000" />
+      <workItem from="1521613807715" duration="1319000" />
+      <workItem from="1522286813716" duration="609000" />
+      <workItem from="1522310488102" duration="602000" />
+      <workItem from="1522627369548" duration="25091000" />
+      <workItem from="1522662517238" duration="39000" />
+      <workItem from="1522734901658" duration="6599000" />
+      <workItem from="1522742757758" duration="167000" />
+      <workItem from="1522803562846" duration="7051000" />
+      <workItem from="1523145654403" duration="4608000" />
+      <workItem from="1523318246519" duration="65039000" />
+      <workItem from="1523924255574" duration="29536000" />
+      <workItem from="1524098668076" duration="9589000" />
+      <workItem from="1524443246337" duration="78190000" />
+      <workItem from="1525228196549" duration="296000" />
+      <workItem from="1525245512200" duration="3264000" />
+      <workItem from="1525322102480" duration="5230000" />
+      <workItem from="1525652827919" duration="53000" />
+      <workItem from="1525678846942" duration="610000" />
+      <workItem from="1525737760251" duration="37000" />
+      <workItem from="1525935328131" duration="809000" />
+      <workItem from="1527818516010" duration="663000" />
+      <workItem from="1528336001424" duration="9537000" />
+      <workItem from="1528356397352" duration="1264000" />
+      <workItem from="1528419185655" duration="37000" />
+      <workItem from="1528935876880" duration="293000" />
+      <workItem from="1529374620675" duration="859000" />
+      <workItem from="1529389814045" duration="92000" />
+      <workItem from="1529634621207" duration="294000" />
+      <workItem from="1529636099306" duration="2208000" />
+      <workItem from="1529650122902" duration="8180000" />
+      <workItem from="1529917325032" duration="3790000" />
+      <workItem from="1530518679441" duration="2920000" />
+      <workItem from="1530671761613" duration="1512000" />
+      <workItem from="1530752239096" duration="1556000" />
+      <workItem from="1530753875678" duration="638000" />
+      <workItem from="1530770699027" duration="1206000" />
+      <workItem from="1530774798072" duration="3349000" />
+      <workItem from="1530834958918" duration="1187000" />
+      <workItem from="1531874144871" duration="3393000" />
+      <workItem from="1531964064731" duration="2570000" />
+      <workItem from="1532327214235" duration="2353000" />
+      <workItem from="1532330163710" duration="2666000" />
+      <workItem from="1532413019045" duration="6374000" />
+      <workItem from="1534746374015" duration="646000" />
+      <workItem from="1535336381449" duration="2000" />
+      <workItem from="1535337065143" duration="301000" />
+      <workItem from="1537257225282" duration="14000" />
+      <workItem from="1538288169728" duration="1300000" />
+      <workItem from="1539070248736" duration="2923000" />
+      <workItem from="1539136396012" duration="2851000" />
+      <workItem from="1539744079533" duration="604000" />
+      <workItem from="1539745295896" duration="1000" />
+      <workItem from="1539758513331" duration="599000" />
+      <workItem from="1540173086916" duration="2063000" />
+      <workItem from="1540177699827" duration="1408000" />
+      <workItem from="1540538846477" duration="604000" />
+      <workItem from="1540773248199" duration="25211000" />
+      <workItem from="1541055170657" duration="820000" />
+      <workItem from="1541058193292" duration="7208000" />
+      <workItem from="1541149732924" duration="381000" />
+      <workItem from="1541150149744" duration="1234000" />
+      <workItem from="1541377420658" duration="5059000" />
+      <workItem from="1541746099466" duration="626000" />
+      <workItem from="1542248522011" duration="392000" />
+      <workItem from="1543202274105" duration="12549000" />
+      <workItem from="1543285365548" duration="598000" />
+      <workItem from="1543287309261" duration="1885000" />
+      <workItem from="1543299554327" duration="4014000" />
+      <workItem from="1543310477252" duration="179000" />
+      <workItem from="1543310712700" duration="4413000" />
+      <workItem from="1543386713873" duration="1293000" />
+      <workItem from="1543392331352" duration="3415000" />
+      <workItem from="1543452994515" duration="15682000" />
+      <workItem from="1543557945933" duration="2126000" />
+      <workItem from="1543799778844" duration="2426000" />
+      <workItem from="1543883277924" duration="1628000" />
+      <workItem from="1543908367677" duration="599000" />
+      <workItem from="1543914934410" duration="3058000" />
+      <workItem from="1544086243863" duration="1662000" />
+      <workItem from="1544166047340" duration="1856000" />
+      <workItem from="1544401697411" duration="66000" />
+      <workItem from="1547535192832" duration="1497000" />
+      <workItem from="1547537631987" duration="848000" />
+    </task>
+    <task id="LOCAL-00001" summary="增加查看账户功能">
+      <created>1496296172663</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1496296172663</updated>
+    </task>
+    <task id="LOCAL-00002" summary="增加在用户处新建账户功能（并在环信后台注册）">
+      <created>1496388904917</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1496388904917</updated>
+    </task>
+    <task id="LOCAL-00003" summary="增加查看账户功能（account.html）">
+      <created>1496389091271</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1496389091271</updated>
+    </task>
+    <task id="LOCAL-00004" summary="修改了查看用户的一些展示细节（去掉ID/增加了警号等）">
+      <created>1496392025307</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1496392025307</updated>
+    </task>
+    <task id="LOCAL-00005" summary="删除新增用户时的环信ID">
+      <created>1496393359688</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1496393359688</updated>
+    </task>
+    <task id="LOCAL-00006" summary="完善新增账户功能，修改账户list（可显示对应appName）,其他小的修改">
+      <created>1496652871962</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1496652871962</updated>
+    </task>
+    <task id="LOCAL-00007" summary="修复---新增用户时增加组织ID信息">
+      <created>1496736176199</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1496736176199</updated>
+    </task>
+    <task id="LOCAL-00008" summary="修复--删除新增用户时选择的APP，增加新建账户时分配角色">
+      <created>1496814282644</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1496814282644</updated>
+    </task>
+    <task id="LOCAL-00009" summary="修复--删除用户时需要进行确认，删除一些不必要的显示">
+      <created>1496903919939</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1496903919939</updated>
+    </task>
+    <task id="LOCAL-00010" summary="修复--紧急修复账户列表的按钮闪动问题，增加一些删除提醒功能">
+      <created>1496912651226</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1496912651226</updated>
+    </task>
+    <task id="LOCAL-00011" summary="新增--增加所有删除的模态框确认提醒">
+      <created>1496969356881</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1496969356881</updated>
+    </task>
+    <task id="LOCAL-00012" summary="修复--增加treegrid的引用/资源列表名称">
+      <created>1496971288795</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1496971288795</updated>
+    </task>
+    <task id="LOCAL-00013" summary="修复--删除除用户列表以外的checkbox，修改批量调整部门的界面，增加在账户管理中从APP查看账户">
+      <created>1496974514633</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1496974514633</updated>
+    </task>
+    <task id="LOCAL-00014" summary="修复--新建账户时，不用自己去环信后台注册，改为本地后台去注册，/去掉小人头像">
+      <created>1496997633798</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1496997633798</updated>
+    </task>
+    <task id="LOCAL-00015" summary="新增---查看账户详情">
+      <created>1496998337832</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1496998337832</updated>
+    </task>
+    <task id="LOCAL-00016" summary=" 修复--一些显示的细节">
+      <created>1497251293258</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1497251293258</updated>
+    </task>
+    <task id="LOCAL-00017" summary="新增">
+      <created>1497259230838</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1497259230838</updated>
+    </task>
+    <task id="LOCAL-00018" summary="完善——删除部门时，有子部门或者部门有人不能直接删除，增加alter提醒">
+      <created>1497490445706</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1497490445706</updated>
+    </task>
+    <task id="LOCAL-00019" summary="完善——组织架构列表一开始为minis号">
+      <created>1497840067624</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1497840067624</updated>
+    </task>
+    <task id="LOCAL-00020" summary="完善--账户管理的app下拉菜单正常，在app管理增加一个查看当前app账户的modal，去除一个登录认证的alert">
+      <created>1497941397137</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1497941397137</updated>
+    </task>
+    <task id="LOCAL-00021" summary="update README">
+      <created>1497941670754</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1497941670754</updated>
+    </task>
+    <task id="LOCAL-00022" summary="修复--修复文件引用">
+      <created>1497942455607</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1497942455607</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Update README">
+      <created>1497942581154</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1497942581154</updated>
+    </task>
+    <task id="LOCAL-00024" summary="1.实现从指挥云后台直接进入IM页面&#10;2.退出时直接关闭聊天窗口">
+      <created>1498202215712</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1498202215712</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add main.html">
+      <created>1498207055916</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1498207055916</updated>
+    </task>
+    <task id="LOCAL-00026" summary="修改用户批处理">
+      <created>1498615865906</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1498615865906</updated>
+    </task>
+    <task id="LOCAL-00027" summary="修改用户批处理--依赖">
+      <created>1498616141397</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1498616141397</updated>
+    </task>
+    <task id="LOCAL-00028" summary="修改用户批处理--修复">
+      <created>1498617249787</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1498617249787</updated>
+    </task>
+    <task id="LOCAL-00029" summary="增加批量删除用户">
+      <created>1499732785161</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1499732785161</updated>
+    </task>
+    <task id="LOCAL-00030" summary="完善——IM对话列表的emoji显示，全改为在HTML获取时修改">
+      <created>1499837920611</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1499837920611</updated>
+    </task>
+    <task id="LOCAL-00031" summary="修复">
+      <created>1499838903969</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1499838903969</updated>
+    </task>
+    <task id="LOCAL-00032" summary="修复--IM 历史框">
+      <created>1499856524970</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1499856524970</updated>
+    </task>
+    <task id="LOCAL-00033" summary="完善-- IM 对话框列表可以被选中（呈灰色）">
+      <created>1499998661886</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1499998661886</updated>
+    </task>
+    <task id="LOCAL-00034" summary="完善--批量删除用户（主窗口和modal之间的通信）">
+      <created>1500339147912</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1500339147912</updated>
+    </task>
+    <task id="LOCAL-00035" summary="完善--IM聊天框可以显示对话者头像和真名，登录后显示头像">
+      <created>1500447239378</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1500447239378</updated>
+    </task>
+    <task id="LOCAL-00036" summary="完善-- implement the upload avatar when creating a new user.">
+      <created>1500882035561</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1500882035561</updated>
+    </task>
+    <task id="LOCAL-00037" summary="新增语音的播放，翻译，显示还有问题">
+      <created>1501206949541</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1501206949541</updated>
+    </task>
+    <task id="LOCAL-00038" summary="语音播放的动画效果，gif图（颜色需要进行修改）">
+      <created>1501395890673</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1501395890673</updated>
+    </task>
+    <task id="LOCAL-00039" summary="增加语音播放的时长显示，修改是否播放语音的变量为每个语音message的属性，这样可以避免多个语音文件同时闪烁播放动画">
+      <created>1501403532042</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1501403532042</updated>
+    </task>
+    <task id="LOCAL-00040" summary="修复-- IM聊天框/按钮等正常显示， 去掉了impanel.html 中的注释">
+      <created>1501412584044</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1501412584044</updated>
+    </task>
+    <task id="LOCAL-00041" summary="完善--单独将speech的部分拿出来，可以显示语音翻译后的结果，缺少横线">
+      <created>1501485536944</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1501485536944</updated>
+    </task>
+    <task id="LOCAL-00042" summary="完善--语音转文字的时候有横线，通过背景图片实现（window画图软件设置RGB同聊天的背景色）">
+      <created>1501500373451</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1501500373451</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2184165000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="186" y="46" width="1597" height="958" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20169161" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="设计师" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="7" />
+      <window_info id="Nl-Palette" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.46964285" weight="0.17011996" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32919955" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="运行" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" sideWeight="0.3065539" weight="0.625" />
+      <window_info anchor="bottom" id="调试" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32882884" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32919955" />
+      <window_info anchor="bottom" id="Spring" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5303571" side_tool="true" visible="true" weight="0.046004843" />
+      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="找到" order="16" visible="true" weight="0.32897604" />
+      <window_info anchor="bottom" id="Docker" order="17" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="1" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" id="控制板" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" visible="true" weight="0.08928572" />
+      <window_info anchor="right" id="Bean Validation" order="5" />
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="right" id="Data View" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="9" />
+      <window_info anchor="right" id="Properties" order="10" />
+      <window_info anchor="right" id="Database" order="11" />
+      <window_info anchor="right" id="Theme Preview" order="12" />
+      <window_info anchor="right" id="Dynamic Properties" order="13" />
+      <window_info anchor="right" id="Maven Projects" order="14" weight="0.023809524" />
+      <window_info anchor="right" id="Maven" order="15" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18095239" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Nl-Palette" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Image Layers" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.46964285" weight="0.17011996" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32919955" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" sideWeight="0.3065539" weight="0.625" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32882884" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32919955" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5303571" side_tool="true" visible="true" weight="0.15594329" />
+      <window_info anchor="bottom" id="Spring" order="11" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="1" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" visible="true" weight="0.08928572" />
+      <window_info anchor="right" id="Bean Validation" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Properties" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="Dynamic Properties" order="11" />
+      <window_info anchor="right" id="Maven Projects" order="12" weight="0.023809524" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="me" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="m18610522372@163.com" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="E:\ide_space\zhy_webclient\test" />
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="完善——组织架构列表一开始为minis号" />
+    <MESSAGE value="完善--账户管理的app下拉菜单正常，在app管理增加一个查看当前app账户的modal，去除一个登录认证的alert" />
+    <MESSAGE value="update README" />
+    <MESSAGE value="修复--修复文件引用" />
+    <MESSAGE value="Update README" />
+    <MESSAGE value="1.实现从指挥云后台直接进入IM页面&#10;2.退出时直接关闭聊天窗口" />
+    <MESSAGE value="add main.html" />
+    <MESSAGE value="修改用户批处理" />
+    <MESSAGE value="修改用户批处理--依赖" />
+    <MESSAGE value="修改用户批处理--修复" />
+    <MESSAGE value="增加批量删除用户" />
+    <MESSAGE value="完善——IM对话列表的emoji显示，全改为在HTML获取时修改" />
+    <MESSAGE value="修复" />
+    <MESSAGE value="修复--IM 历史框" />
+    <MESSAGE value="完善-- IM 对话框列表可以被选中（呈灰色）" />
+    <MESSAGE value="完善--批量删除用户（主窗口和modal之间的通信）" />
+    <MESSAGE value="完善--IM聊天框可以显示对话者头像和真名，登录后显示头像" />
+    <MESSAGE value="完善-- implement the upload avatar when creating a new user." />
+    <MESSAGE value="新增语音的播放，翻译，显示还有问题" />
+    <MESSAGE value="语音播放的动画效果，gif图（颜色不太对）" />
+    <MESSAGE value="语音播放的动画效果，gif图（颜色需要进行修改）" />
+    <MESSAGE value="增加语音播放的时长显示，修改是否播放语音的变量为每个语音message的属性，这样可以避免多个语音文件同时闪烁播放动画" />
+    <MESSAGE value="修复-- IM聊天框/按钮等正常显示， 去掉了impanel.html 中的注释" />
+    <MESSAGE value="完善--单独将speech的部分拿出来，可以显示语音翻译后的结果，缺少横线" />
+    <MESSAGE value="完善--语音转文字的时候有横线，通过背景图片实现（window画图软件设置RGB同聊天的背景色）" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善--语音转文字的时候有横线，通过背景图片实现（window画图软件设置RGB同聊天的背景色）" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/face/facedata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1377" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/face/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-486" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/face/zTreeDirective.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/attendance.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/realtime/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="81" column="17" lean-forward="true" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/user/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="297" column="25" selection-start-line="297" selection-start-column="25" selection-end-line="297" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/gd/user/addsPic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-756">
+          <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/gd/user/adds.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/gd/user/callBack.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/user/addsPic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2727">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/auth/ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/query/detectImages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="273" column="6" lean-forward="true" selection-start-line="273" selection-start-column="6" selection-end-line="273" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/bbb.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/gd/auth/changePassword.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/background.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/login_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1120">
+          <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/blocks/aside.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/blocks/nav.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/blocks/page_footer.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/gd/blocks/aside.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/gd/blocks/breadcrumb.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/gd/blocks/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/jquery/charts/flot/jquery.flot.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="27" column="11074" selection-start-line="27" selection-start-column="11074" selection-end-line="27" selection-end-column="11074" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/gd/face/videoregister.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1593">
+          <caret line="59" column="57" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/modules/laydate/default/laydate.css" />
+    <entry file="file://$PROJECT_DIR$/vendor/lay/modules/code.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="44" column="25" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/layui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="492" selection-start-line="1" selection-start-column="492" selection-end-line="1" selection-end-column="492" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/gd/auth/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/gd/config/attendance_data.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/gd/config/attendance.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6264">
+          <caret line="232" column="26" selection-start-line="232" selection-start-column="26" selection-end-line="232" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/gd/config/camera/add.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/user/edits.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/user/edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2700">
+          <caret line="100" column="29" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/org/people/edit.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/org/people/delete.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/org/people/add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/gd/user/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/gd/config/camera/addtbl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/user/adds.js" />
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/camerajs/addtbl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3510">
+          <caret line="130" column="17" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/camera.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6642">
+          <caret line="246" column="157" selection-start-line="245" selection-start-column="156" selection-end-line="246" selection-end-column="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/camerajs/delete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1431">
+          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/camerajs/add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2997">
+          <caret line="111" column="28" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/gd/config/camera.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="21" selection-start-line="10" selection-start-column="15" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/gd/config/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1755">
+          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/face/video.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5508">
+          <caret line="204" column="21" selection-start-line="204" selection-start-column="21" selection-end-line="204" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/config.router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="68" column="80" selection-start-line="68" selection-start-column="80" selection-end-line="68" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/user/add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="119" column="39" selection-start-line="119" selection-start-column="39" selection-end-line="119" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>zhy_webclient</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,266 @@
+<div class="webim-chatwindow ">
+    <div class="webim-chatwindow-title">
+        <!--{{currentChat.name}}{{currentChat.type=='groupchat'?'('+currentChat.affiliations_count+')':''}}<i ng-show="currentChat.type=='groupchat'" class="webim-down-icon font smallest  dib webim-down-icon" id="memberOption">D</i>-->
+        {{currentChat.name}}{{currentChat.type=='groupchat'?'('+currentChat.affiliations_count+')':''}}<i
+            class="webim-down-icon font smallest  dib webim-down-icon" id="memberOption">D</i>
+        <input type="text" ng-model="newGroupName" ng-show="currentChat.type=='chat'" style="color:#FF0000;"/>
+    </div>
+    <div class="webim-chatwindow-msg">
+        <div class="webim-msg-container rel" ng-model="currentChat" ng-repeat="msg in currentChat.msglist">
+
+            <div data-reactroot=""
+                 ng-class="{true:'right',false:'left'}[msg.from==currentUserName]">
+                <div class="webim-avatar-icon small"
+                     ng-class="{true:'right',false:'left'}[msg.from==currentUserName]">
+                    <img class="w100" ng-src="{{msg.ext.userPic}}" ng-click="showMenu($event)"/>
+                </div>
+                <p ng-class="{true:'right',false:'left'}[msg.from==currentUserName]">
+                    {{msg.ext.userName}} {{msg.time}}
+                </p>
+
+                <div class="clearfix">
+                    <div class="webim-msg-value" ng-if="!msg.audioData">
+                        <span class="webim-msg-icon font">{{msg.from==currentUserName? 'I':'H'}}</span>
+                        <!--这里是处理是表情和文本混合的情况-->
+                        <span class="emojiText" ng-if="msg.emoji">
+                                <span ng-repeat="dataEmoji in msg.data">
+                                     <span ng-if="dataEmoji.type === 'emoji'">
+                                         <img ng-src="{{dataEmoji.data}}"/>
+                                     </span>
+                                     <span ng-if="dataEmoji.type === 'txt'">
+                                         {{dataEmoji.data}}
+                                     </span>
+                                </span>
+                        </span>
+                        <!--只是文本的时候-->
+                        <span class="textOnly" ng-if="isString(msg.data)">
+
+                            <!--<span ng-repeat="item in msg.data">-->
+                            <span>
+                                {{msg.data}}
+                            </span>
+
+                        </span>
+
+                        <!--ng-class="{true:'web_wechat_voice_green',false:'web_wechat_voice_gray'}[msg.from==currentUserName]"-->
+                        <!--处理语音的class="webim-audio-slash"-->
+                        <!--<i class="web_wechat_voice_gray"-->
+                        <!--ng-class="{'web_wechat_voice_gray_playing': msg.voicePlay}"-->
+                        <!--ng-if="msg.audioData"-->
+                        <!--ng-click="playVideo(msg)"-->
+
+                        <!--&gt;-->
+                        <!--</i>-->
+                        <!--<span  ng-if="msg.audioData"-->
+                        <!--sh-context-menu menu-options="menuOptions"-->
+                        <!--context-data="msg">-->
+                        <!--{{msg.audioData}}-->
+                        <!--</span>-->
+                    </div>
+                    <!--处理语音的class="webim-audio-slash"-->
+                    <div class="webim-msg-speech" ng-if="msg.audioData"
+                         ng-click="playVideo(msg)"
+                         sh-context-menu menu-options="menuOptions"
+                         context-data="msg">
+                        <span class="webim-msg-icon font">{{msg.from==currentUserName? 'I':'H'}}</span>
+
+                        <i class="web_wechat_voice_gray"
+                           ng-class="{'web_wechat_voice_gray_playing': msg.voicePlay}"
+                        >
+                        </i>
+                        <p ng-class="{'webim-msg-line':msg.audioText}">
+                              {{msg.audioData}}
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="webim-send-wrapper">
+
+        <div class="webim-send-tags">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary">
+                    <input type="checkbox"/>领导批示
+                </label>
+                <label class="btn btn-primary">
+                    <input type="checkbox"/>指挥调度
+                </label>
+                <label class="btn btn-primary">
+                    <input type="checkbox"/>任务研判
+                </label>
+                <label class="btn btn-primary">
+                    <input type="checkbox"/>阅读回执
+                </label>
+            </div>
+            <button type="button" class="btn btn-primary">...</button>
+        </div>
+
+        <div class="webim-chatwindow-options">
+            <div class="col-xs-1">
+                <a class="font smaller " ng-click="showEmojiPanel($event)">J</a>
+                <!--<button class="btn btn-default" ng-click="showEmojiPanel()" ng-disabled="test">按钮{{test}}</button>-->
+                <div id="emojiPanel" tabindex="-1">
+                    <!--<div ng-show="hideEmoji">-->
+                    <a ng-click="insertEmoji( '[):]', 'sysim/images/faces/ee_1.png', $event)"><img
+                            src="sysim/images/faces/ee_1.png"></a>
+                    <a ng-click="insertEmoji( '[:D]', 'sysim/images/faces/ee_2.png', $event)"><img
+                            src="sysim/images/faces/ee_2.png"></a>
+                    <a ng-click="insertEmoji( '[;)]', 'sysim/images/faces/ee_3.png', $event)"><img
+                            src="sysim/images/faces/ee_3.png"></a>
+                    <a ng-click="insertEmoji( '[:-o]', 'sysim/images/faces/ee_4.png', $event)"><img
+                            src="sysim/images/faces/ee_4.png"></a>
+                    <a ng-click="insertEmoji( '[:p]', 'sysim/images/faces/ee_5.png', $event)"><img
+                            src="sysim/images/faces/ee_5.png"></a>
+                    <a ng-click="insertEmoji( '[(H)]', 'sysim/images/faces/ee_6.png', $event)"><img
+                            src="sysim/images/faces/ee_6.png"></a>
+                    <a ng-click="insertEmoji( '[:@]', 'sysim/images/faces/ee_7.png', $event)"><img
+                            src="sysim/images/faces/ee_7.png"></a>
+                    <a ng-click="insertEmoji( '[:s]', 'sysim/images/faces/ee_8.png', $event)"><img
+                            src="sysim/images/faces/ee_8.png"></a>
+                    <a ng-click="insertEmoji( '[:$]', 'sysim/images/faces/ee_9.png', $event)"><img
+                            src="sysim/images/faces/ee_9.png"></a>
+                    <a ng-click="insertEmoji( '[:(]', 'sysim/images/faces/ee_10.png', $event)"><img
+                            src="sysim/images/faces/ee_10.png"></a>
+                    <a ng-click="insertEmoji( '[:\'(]', 'sysim/images/faces/ee_11.png', $event)"><img
+                            src="sysim/images/faces/ee_11.png"></a>
+                    <a ng-click="insertEmoji( '[:|]', 'sysim/images/faces/ee_12.png', $event)"><img
+                            src="sysim/images/faces/ee_12.png"></a>
+                    <a ng-click="insertEmoji( '[(a)]', 'sysim/images/faces/ee_13.png', $event)"><img
+                            src="sysim/images/faces/ee_13.png"></a>
+                    <a ng-click="insertEmoji( '[8o|]', 'sysim/images/faces/ee_14.png', $event)"><img
+                            src="sysim/images/faces/ee_14.png"></a>
+                    <a ng-click="insertEmoji( '[8-|]', 'sysim/images/faces/ee_15.png', $event)"><img
+                            src="sysim/images/faces/ee_15.png"></a>
+                    <a ng-click="insertEmoji( '[+o(]', 'sysim/images/faces/ee_16.png', $event)"><img
+                            src="sysim/images/faces/ee_16.png"></a>
+                    <a ng-click="insertEmoji( '[<o)]', 'sysim/images/faces/ee_17.png', $event)"><img
+                            src="sysim/images/faces/ee_17.png"></a>
+                    <a ng-click="insertEmoji( '[|-)]', 'sysim/images/faces/ee_18.png', $event)"><img
+                            src="sysim/images/faces/ee_18.png"></a>
+                    <a ng-click="insertEmoji( '[*-)]', 'sysim/images/faces/ee_19.png', $event)"><img
+                            src="sysim/images/faces/ee_19.png"></a>
+                    <a ng-click="insertEmoji( '[:-#]', 'sysim/images/faces/ee_20.png', $event)"><img
+                            src="sysim/images/faces/ee_20.png"></a>
+                    <a ng-click="insertEmoji( '[:-*]', 'sysim/images/faces/ee_21.png', $event)"><img
+                            src="sysim/images/faces/ee_21.png"></a>
+                    <a ng-click="insertEmoji( '[^o)]', 'sysim/images/faces/ee_22.png', $event)"><img
+                            src="sysim/images/faces/ee_22.png"></a>
+                    <a ng-click="insertEmoji( '[8-)]', 'sysim/images/faces/ee_23.png', $event)"><img
+                            src="sysim/images/faces/ee_23.png"></a>
+                    <a ng-click="insertEmoji( '[(|)]', 'sysim/images/faces/ee_24.png', $event)"><img
+                            src="sysim/images/faces/ee_24.png"></a>
+                    <a ng-click="insertEmoji( '[(u)]', 'sysim/images/faces/ee_25.png', $event)"><img
+                            src="sysim/images/faces/ee_25.png"></a>
+                    <a ng-click="insertEmoji( '[(S)]', 'sysim/images/faces/ee_26.png', $event)"><img
+                            src="sysim/images/faces/ee_26.png"></a>
+                    <a ng-click="insertEmoji( '[(*)]', 'sysim/images/faces/ee_27.png', $event)"><img
+                            src="sysim/images/faces/ee_27.png"></a>
+                    <a ng-click="insertEmoji( '[(#)]', 'sysim/images/faces/ee_28.png', $event)"><img
+                            src="sysim/images/faces/ee_28.png"></a>
+                    <a ng-click="insertEmoji( '[(R)]', 'sysim/images/faces/ee_29.png', $event)"><img
+                            src="sysim/images/faces/ee_29.png"></a>
+                    <a ng-click="insertEmoji( '[({)]', 'sysim/images/faces/ee_30.png', $event)"><img
+                            src="sysim/images/faces/ee_30.png"></a>
+                    <a ng-click="insertEmoji( '[(})]', 'sysim/images/faces/ee_31.png', $event)"><img
+                            src="sysim/images/faces/ee_31.png"></a>
+                    <a ng-click="insertEmoji( '[(k)]', 'sysim/images/faces/ee_32.png', $event)"><img
+                            src="sysim/images/faces/ee_32.png"></a>
+                    <a ng-click="insertEmoji( '[(F)]', 'sysim/images/faces/ee_33.png', $event)"><img
+                            src="sysim/images/faces/ee_33.png"></a>
+                    <a ng-click="insertEmoji( '[(W)]', 'sysim/images/faces/ee_34.png', $event)"><img
+                            src="sysim/images/faces/ee_34.png"></a>
+                    <a ng-click="insertEmoji( '[(D)]', 'sysim/images/faces/ee_35.png', $event)"><img
+                            src="sysim/images/faces/ee_35.png"></a>
+                </div>
+            </div>
+            <div class="col-xs-1">
+                <!--<span class="font smaller">K</span>-->
+                <a class="font smaller">K</a>
+                <input type="file" id="image" onchange="angular.element(this).scope().onImageSelect()"
+                       style="
+                                width: 24px;
+                                height:24px;
+                                position:absolute;
+                                left: 20px;
+                                top: 0;
+                                cursor: pointer;
+                                filter:alpha(opacity:0);
+                                opacity: 0"
+                />
+            </div>
+            <div class="col-xs-1">
+                <!--<span class="font smaller">S</span>-->
+                <a class="font smaller">S</a>
+                <input type="file" id="file" onchange="angular.element(this).scope().onFileSelect()"
+                       style="width:24px; height:24px; position:absolute; left:20px; top:0; cursor: pointer; filter:alpha(opacity:0); opacity: 0 ">
+            </div>
+        </div>
+        <!--发送消息的文本框-->
+
+        <div id="editTextarea" class="flex edit_area"
+             contenteditable="true"
+             style="height:93px;width:100%;overflow: auto;border:1px solid white;"
+             ng-keyup="editTextareaKeyup()" ng-keydown="editTextareaKeydown($event)">
+        </div>
+        <!--<textarea ng-model="inputMessage"></textarea>-->
+        <div>
+            <button class="btn btn-primary btn-sm" ng-click="send()">发送消息</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="groupModel" tabindex="-1" role="dialog" aria-labelledby="groupModelLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="groupModelLabel">添加/删除成员</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <input class="form-control" type="text"/>
+                        <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">搜索</button>
+                </span>
+                    </div>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                       href="#collapseOne"
+                                       aria-expanded="true" aria-controls="collapseOne">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                 aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <tree-grid tree-data="tree_data" tree-control="my_tree" col-defs="col_defs"
+                                               expand-on="expanding_property"
+                                               on-select="my_tree_handler_addMem(branch,currentChat.roomId,currentChat.type)"
+                                               expand-level="2" icon-leaf="glyphicon glyphicon-globe"></tree-grid>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="dropdown-menu" id="optMenu">
+        <li><a href="#">查看详细资料</a></li>
+        <li><a href="#">查看当前位置</a></li>
+        <li><a href="#">发起实时视频</a></li>
+        <li><a href="#">...</a></li>
+    </ul>
+</div>

@@ -1,0 +1,37 @@
+<html lang="en" ng-app="routeModule">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!--<script src="../vendor/angular.js"></script>-->
+  <!--<script src="../vendor/angular-route.js"></script>-->
+  <!--<link rel="stylesheet" href="../vendor/bookstrap/css/bootstrap.css">-->
+  <!--<link rel="stylesheet" href="../vendor/bookstrap/css/bootstrap-theme.css">-->
+
+
+
+</head>
+<body>
+<div>
+  <a href="#/view1">view1</a>
+  <a href="#/view2">view2</a>
+</div>
+<script type="text/ng-template" id="/view1.html">
+  <h1>111</h1>
+</script>
+<script type="text/ng-template" id="/view2.html">
+  <h1>222</h1>
+</script>
+<script>
+    var routeModule = angular.module('routeModule',['ngRoute']);
+    routeModule.config(['$routeProvider',function ($routeProvider) {
+        $routeProvider.
+        when('/view1',{
+            templateUrl:"/view1.html"
+        }).
+        when('/view2',{
+            templateUrl:"/view2.html"
+        })
+    }]);
+</script>
+</body>
+</html>

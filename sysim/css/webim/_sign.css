@@ -1,0 +1,31 @@
+/*
+ * signin & signup
+ */
+.webim-sign {
+  overflow: hidden;
+  width: 400px;
+  margin: 40px auto;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.29804) 0px 0px 6px 0px;
+  border: 0px none black;
+  -webkit-tap-highlight-color: transparent;
+  background-color: white; }
+  .webim-sign h2 {
+    font-size: 24px;
+    color: #1a1a1a;
+    width: 100%;
+    line-height: 84px;
+    height: 64px; }
+  .webim-sign p {
+    margin: 0px auto 40px;
+    width: 300px;
+    text-align: left; }
+    .webim-sign p i {
+      font-style: normal;
+      color: #4eb1f4;
+      cursor: pointer; }
+  .webim-sign.webim-signup button {
+    margin-top: 30px; }
+
+/*# sourceMappingURL=_sign.css.map */

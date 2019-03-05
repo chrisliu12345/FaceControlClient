@@ -1,0 +1,33 @@
+
+
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
+    app.settings.asideFolded = false;
+    app.settings.asideDock = false;
+  ">
+    <div class="wrapper-md" ng-controller="FaceCtrl as showCase">
+
+        <div class="panel panel-default">
+
+            <div class="panel-heading" style="height: 40px">
+
+
+                <ul class="nav navbar-nav">
+                </ul>
+
+
+            </div>
+            <br>
+            <div class="row wrapper" ng-switch="name">
+                <div ng-switch-default="1">
+                    <div ng-include="'tpl/gd/face/videoregister.html'" ng-controller="VideoCtrl as showCase"></div>
+                </div>
+                <div ng-switch-when="2">
+                    <div ng-include="'tpl/gd/face/facedataupdate.html'" ng-controller="FaceDataCtrl as showCase"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+

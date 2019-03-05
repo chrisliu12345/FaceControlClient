@@ -1,0 +1,61 @@
+<form name="form" role="form" class="form-horizontal form-validation">
+    <div class="modal-header">
+        <h3 class="modal-title" align="center">角色详情</h3>
+    </div>
+    <div class="modal-body">
+
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>角色名</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="role.roleName"
+                       readonly>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>权限</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="role.authorityNames"
+                       readonly>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>角色详情</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="role.description" readonly/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>更新时间</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="role.updateTime" readonly/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>排序编号</label>
+            </div>
+
+            <div class="col-md-9">
+                <input type="text" class="form-control" ng-model="role.orderNum" readonly/>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button"  ng-click="viewVm.ok()">关闭</button>
+    </div>
+
+</form>

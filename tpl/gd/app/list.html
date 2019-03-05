@@ -1,0 +1,46 @@
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
+    app.settings.asideFolded = false;
+    app.settings.asideDock = false;
+  ">
+    <div class="wrapper-md" ng-controller="AppCtrl as showCase">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <ul class="nav nav-pills pull-right">
+                    <li style=" padding-top:4px; padding-right:4px">
+
+                        <button class="btn m-b-xs btn-sm btn-primary btn-addon" ng-click="showCase.add()"><i
+                                class="fa fa-plus"></i>新增
+                        </button>
+                        <button class="btn m-b-xs btn-sm btn-success btn-addon" ng-click="showCase.addApps()"><i
+                            class="fa fa-plus"></i>批量导入编码器
+                    </button>
+                        <button class="btn m-b-xs btn-sm btn-danger btn-addon" ng-click="showCase.export()"><i
+                                class="fa fa-plus"></i>批量导出编码器
+                        </button>
+
+                    </li>
+
+                </ul>
+                编码器列表
+            </div>
+            <div class="row wrapper " >
+                <div>
+                    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;全选 <input type="checkbox" ng-click="show_all(selectAll)"  ng-model="selectAll" >
+                    <input type="button" ng-click="delAll()" value="全部删除" class="btn  btn-danger btn-sm" ng-show="myWar" >
+                    <input type="button" ng-click="delColumn()" value="批量删除" class="btn btn-info btn-sm"><br>
+
+                </div>
+                <div  >
+                    <form class="form-inline" ng-submit="showCase.add()" >
+                        <table datatable id="appList" dt-dataset="dtDataset" dt-options="dtOptions" dt-columns="dtColumns" class="table table-striped table-bordered" >
+
+                        </table>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+

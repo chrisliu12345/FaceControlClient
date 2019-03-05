@@ -1,0 +1,99 @@
+<div class="modal-header-without-border-bottom">
+    <div class="col-md-4">
+        <!--<h3 class="modal-title ">查看用户</h3>-->
+    </div>
+    <div>
+        <ul id="userViewTab" class="nav nav-tabs">
+            <li class="active"><a data-target ="#basicInfo" data-toggle="tab">基本信息</a></li>
+          <!--  <li><a data-target ="#accountInfo" data-toggle="tab">账号信息</a></li>-->
+        </ul>
+    </div>
+</div>
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active" id="basicInfo">
+        <div class="modal-body">
+            <form role="form" class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label>组</label>
+                    </div>
+
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" ng-model="user.org" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label>姓名</label>
+                    </div>
+
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" ng-model="user.realName" readonly>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label>别名</label>
+                    </div>
+
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" ng-model="user.policeNum" readonly/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label>布控地点</label>
+                    </div>
+
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" ng-model="locationNow.AttendanceLocationName"readonly/>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label>注册日期</label>
+                    </div>
+
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" ng-model="user.createTime" readonly>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="modal-footer">
+            <!--<button class="btn btn-primary" type="button" ng-click="viewVm.ok()">确认</button>-->
+            <button class="btn btn-primary" type="button" ng-click="viewVm.cancel()">关闭</button>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="accountInfo">
+        <div class="modal-body">
+            <form class="form-inline">
+                <!--<table id="userAppAccountList" class="table table-striped table-bordered">-->
+                    <!--<thead>-->
+                    <!--<tr>-->
+                        <!--<th>即时通信账户</th>-->
+                        <!--<th>对应App</th>-->
+                        <!--<th>App详情</th>-->
+                    <!--</tr>-->
+                    <!--</thead>-->
+                    <!--<tbody>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+                <table datatable id="accountappList" dt-dataset="dtDataset" dt-options="dtOptions" dt-columns="dtColumns" class="table table-striped table-bordered">
+                </table>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="viewVm.ok()">关闭</button>
+            <!--<button class="btn btn-warning" type="button" ng-click="viewVm.cancel()">删除账户</button>-->
+        </div>
+    </div>
+</div>
+
+
+

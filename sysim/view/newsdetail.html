@@ -1,0 +1,29 @@
+<div class="news-panel">
+    <div class="panel-title">警情详情</div>
+    <div class="panel-container news-detail-panel">
+        <div class="row">
+            <div class="col-xs-4 no-padding-right"><b>接报时间:</b></div>
+            <div class="col-xs-8 no-padding-left">{{currentNew.time}}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 no-padding-right"><b>事件标题:</b></div>
+            <div class="col-xs-8 no-padding-left">{{currentNew.title}}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 no-padding-right"><b>事件地点:</b></div>
+            <a href="javascript:void(0)" ng-click="checkMap()">
+                <div class="col-xs-8 no-padding-left">{{currentNew.position}}</div> 
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 no-padding-right"><b>事件等级:</b></div>
+            <div class="col-xs-8 no-padding-left">{{currentNew.level}}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 no-padding-right"><b>事件描述:</b></div>
+            <div class="col-xs-8 no-padding-left">{{currentNew.description}}</div>
+        </div>
+        <button type="button" class="btn btn-link btn-send-news"
+                ng-show="currentNew&&user.status==1" ng-click="sendNewMessage()">发送警情详情</button>
+    </div>
+</div>

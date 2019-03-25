@@ -14,10 +14,10 @@ angular.module('app')
             $scope.app = {
 
                 user: {
-                    username: "",
-                    password: ""
+                    username: "admin",
+                    password: "111111"
                 },
-                name: '人脸识别布控系统',
+                name: '人脸识别布控注册',
                 version: '1.3.3',
                 // for chart colors
                 color: {
@@ -70,7 +70,6 @@ angular.module('app')
                 $translate.use(langKey);
                 $scope.lang.isopen = !$scope.lang.isopen;
             };
-
             $scope.logout = function () {
                 // $localStorage.auth = null;
                 // $http.defaults.headers.common['Authorization'] = "Basic";

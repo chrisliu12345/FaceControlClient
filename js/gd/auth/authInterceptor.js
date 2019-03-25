@@ -1,6 +1,6 @@
 angular.module('app')
     .factory('AuthInterceptor', ['$rootScope', '$q', '$location','$cookieStore',
-        function ($rootScope, $q, $location, $cookieStore ) {
+        function ($rootScope,$q, $location, $cookieStore ) {
 
         return {
             'request': function (config) {
@@ -9,7 +9,8 @@ angular.module('app')
                 var password = $cookieStore.get('password');
                 if(undefined === username && undefined === password)
                 {
-                    return config;
+                    //return config;
+                    $rootScope.loginDirect;
                 }
 
                 var encodedString = btoa(username + ":" + password);
@@ -24,7 +25,7 @@ angular.module('app')
             },
             'responseError': function (response) {
 
-                if (response.status === 401) {
+               /* if (response.status === 401) {
                      alert("用户名密码错误，请重新输入！");
                     // $state.go('auth.login', {}, {reload: true});
                     console.log("请重新登录");
@@ -32,7 +33,7 @@ angular.module('app')
                     // window.location = "http://192.168.5.183:9091";
                     $location.url('/auth/login');
                 }
-                return $q.reject(response);
+                return $q.reject(response);*/
             }
         }
 

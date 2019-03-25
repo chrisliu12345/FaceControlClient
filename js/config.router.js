@@ -331,7 +331,7 @@ angular.module('app')
                     .state('layout', {
                         abstract: true,
                         url: '/layout',
-                        templateUrl: 'tpl/gd/blocks/layout.html'
+                        templateUrl: 'tpl/gd/blocks/app.html'
                     })
                     .state('layout.im', {
                         url: '/im',

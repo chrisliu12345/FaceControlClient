@@ -1,21 +1,20 @@
 <!-- list -->
+
 <ul class="nav" ng-controller="navCtrl">
     <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
         <span>导航</span>
     </li>
-  <!--  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">FrontEnd<b class="caret"></b></a>
-        <ul class="dropdown-menu">
 
-            <li><a href="#">Google Plus API</a></li>
-            <li><a href="#">HTML5</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Examples</a></li>
-        </ul>
-    </li>-->
-    <li ui-sref-active="active" ng-repeat="x in menus">
+ <li ui-sref-active="active" ng-repeat="x in menus">
         <a ui-sref="{{x.resourceName}}">
             <i class="glyphicon glyphicon-th-large icon text-success"></i>
             <span>{{x.description}}</span>
         </a>
     </li>
+   <!-- <li ui-sref-active="active" >
+        <a ui-sref="app.user">
+            <i class="glyphicon glyphicon-th-large icon text-success"></i>
+            <span>人脸注册</span>
+        </a>
+    </li>-->
 </ul>

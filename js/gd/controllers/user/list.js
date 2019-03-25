@@ -39,7 +39,6 @@ app.factory("UserService", function () {
     return service;
 });
 
-
 app.controller('userCtrl', userCtrl);
 
 function userCtrl($scope, $rootScope, $http, $resource, OrgTree, $modal, $log, User, UserService,VoiceService, $state, $compile, DTOptionsBuilder, DTColumnBuilder) {
@@ -67,6 +66,46 @@ function userCtrl($scope, $rootScope, $http, $resource, OrgTree, $modal, $log, U
 
     var tree;
     $scope.org_tree = tree = {};
+    $scope.loginUser=function(){
+        $http({
+            method: 'POST',
+            url: '/ma/auth',
+            data:{
+                "username":"admin",
+                "password":"111111"
+            }
+        }).then(function successCallback(data) {
+            $scope.tokens = 'Bearer' + ' ' + data.data.token;
+
+            $rootScope.token = $scope.tokens;
+            $cookieStore.put('token',$scope.tokens );
+
+            $http({
+                method: 'GET',
+                url: '/ma/login'
+            }).then(function (response) {
+                $rootScope.currentAccountUserinfo = {};
+                var group=response.data.data[0].userinfo[0].parentorg+"|"+response.data.data[0].userinfo[0].org;
+                var account = {
+                    accountName: $rootScope.username,
+                    password: $rootScope.password,
+                    realName: response.data.data[0].userinfo[0].realName,
+                    avatar: response.data.data[0].userinfo[0].picture,
+                    tokens:$scope.tokens,
+                    decription:response.data.data[0].decripton,
+                    bumen:group,
+                    policeNum:response.data.data[0].userinfo[0].policeNum
+                };
+                $cookieStore.put('account', account);
+                angular.copy(account, $rootScope.currentAccountUserinfo);
+                $rootScope.accountId = response.data.accountId;
+                //$state.go('app.dashboard');
+            }, function (reason) {
+                console.log(reason);
+                $scope.authError = "服务器登录错误";
+            })
+        });
+    }
 
     $scope.expanding_property = {
         field: "",
@@ -201,28 +240,14 @@ function userCtrl($scope, $rootScope, $http, $resource, OrgTree, $modal, $log, U
 
     };
     vm.speakToVoice=function(){
-        $scope.waitVoice=true;
+
         $http({
-            url: '/ma/user/voice',
+            url: '/ma/common/cleanRegister',
             method: 'GET'
         }).then(function (result) {
-            console.log(result);
-            if(result.data.length===0){
-                alert("所有人员均有语音功能，无须添加！");
-                $scope.waitVoice=false;
-            }else{
-            VoiceService.set(result.data);
-                $scope.waitVoice=false;
-            var modalInstance = $modal.open({
-                animation: vm.animationsEnabled,
-                templateUrl: 'tpl/gd/user/voiceBack.html',
-                controller: 'VoiceCtrl',
-                controllerAs: 'voiceVm',
-                backdrop: "static"
-            });
-            }
+           alert("修复完成！");
         }, function (reason) {
-            console.log("语音生成失败！检查是否可访问百度云！")
+            console.log("修复失败！")
         });
 
     }

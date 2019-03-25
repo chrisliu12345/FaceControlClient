@@ -16,9 +16,8 @@ app.controller('LoginController', function ($rootScope, $scope, $state, $http, $
         $translate.use(y);
 
     };
-    $scope.login = function () {
+    $rootScope.loginDirect=$scope.login = function () {
         $scope.authError = "";
-
         $rootScope.username = $scope.user.username;
         $rootScope.password = $scope.user.password;
 
@@ -60,8 +59,6 @@ app.controller('LoginController', function ($rootScope, $scope, $state, $http, $
                 };
                 $cookieStore.put('account', account);
                 angular.copy(account, $rootScope.currentAccountUserinfo);
-                // $rootScope.PicturePath="userPic/"+$rootScope.currentAccountUserinfo.userinfo[0].picture;
-                // $cookieStore.put('picture', $rootScope.PicturePath);
                 $rootScope.accountId = response.data.accountId;
                 $state.go('app.dashboard');
             }, function (reason) {

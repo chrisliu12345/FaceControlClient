@@ -31,37 +31,38 @@
     <session id="-408221010">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.20" value="2" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="41" />
-          <entry key="js" value="62" />
+          <entry key="html" value="44" />
+          <entry key="js" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="41" />
-          <entry key="JavaScript" value="62" />
+          <entry key="HTML" value="44" />
+          <entry key="JavaScript" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="2" />
-          <entry key="html" value="68" />
-          <entry key="js" value="347" />
+          <entry key="html" value="133" />
+          <entry key="js" value="1010" />
           <entry key="less" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="HTML" value="68" />
-          <entry key="JavaScript" value="347" />
+          <entry key="HTML" value="133" />
+          <entry key="JavaScript" value="1010" />
           <entry key="Less" value="7" />
         </counts>
       </usages-collector>
@@ -71,12 +72,58 @@
     <favorites_list name="zhy_webclient" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/gd/controllers/user/addsPic.js">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpl/gd/config/camera/addtbl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-149">
-              <caret line="89" column="40" lean-forward="true" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
+            <state relative-caret-position="303">
+              <caret line="15" column="20" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="15" selection-end-column="20" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/camerajs/addtbl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1113">
+              <caret line="141" column="39" selection-start-line="141" selection-start-column="39" selection-end-line="141" selection-end-column="39" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/gd/controllers/realtime/list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2376">
+              <caret line="158" column="72" selection-start-line="158" selection-start-column="72" selection-end-line="158" selection-end-column="72" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpl/gd/config/list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="624">
+              <caret line="57" column="18" lean-forward="true" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -293,12 +340,9 @@
         <option value="$PROJECT_DIR$/tpl/gd/auth/login.html" />
         <option value="$PROJECT_DIR$/tpl/gd/face/videoregister.html" />
         <option value="$PROJECT_DIR$/js/gd/controllers/config/list.js" />
-        <option value="$PROJECT_DIR$/tpl/gd/config/list.html" />
         <option value="$PROJECT_DIR$/tpl/gd/config/attendance.html" />
         <option value="$PROJECT_DIR$/js/gd/controllers/user/add.js" />
-        <option value="$PROJECT_DIR$/tpl/gd/config/camera/addtbl.html" />
         <option value="$PROJECT_DIR$/tpl/gd/user/add.html" />
-        <option value="$PROJECT_DIR$/js/gd/controllers/config/camerajs/addtbl.js" />
         <option value="$PROJECT_DIR$/js/gd/controllers/face/video.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/tpl/blocks/aside.html" />
@@ -314,6 +358,9 @@
         <option value="$PROJECT_DIR$/js/gd/controllers/user/list.js" />
         <option value="$PROJECT_DIR$/tpl/gd/blocks/nav.html" />
         <option value="$PROJECT_DIR$/js/gd/controllers/nav.js" />
+        <option value="$PROJECT_DIR$/tpl/gd/config/list.html" />
+        <option value="$PROJECT_DIR$/tpl/gd/config/camera/addtbl.html" />
+        <option value="$PROJECT_DIR$/js/gd/controllers/config/camerajs/addtbl.js" />
       </list>
     </option>
   </component>
@@ -343,10 +390,10 @@
     <dismissed value="$PROJECT_DIR$/vendor/webim/sdk/package.json" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2269" />
-    <option name="y" value="86" />
-    <option name="width" value="1280" />
-    <option name="height" value="768" />
+    <option name="x" value="2131" />
+    <option name="y" value="51" />
+    <option name="width" value="1551" />
+    <option name="height" value="839" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -366,6 +413,11 @@
             <path>
               <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
               <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -373,13 +425,6 @@
               <item name="control_client" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="gd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="control_client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="gd" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
@@ -387,7 +432,14 @@
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="gd" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="control_client" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="gd" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="realtime" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
@@ -405,14 +457,15 @@
               <item name="control_client" type="462c0819:PsiDirectoryNode" />
               <item name="tpl" type="462c0819:PsiDirectoryNode" />
               <item name="gd" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
               <item name="control_client" type="462c0819:PsiDirectoryNode" />
               <item name="tpl" type="462c0819:PsiDirectoryNode" />
               <item name="gd" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="camera" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="control_client" type="b2602c69:ProjectViewProjectNode" />
@@ -466,7 +519,7 @@
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="E:/VideoConfig/zhy_webclient" />
+    <property name="last_opened_file_path" value="E:/Z_Test/AngularJsDemo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="project.structure.last.edited" value="Project" />
@@ -989,6 +1042,8 @@
       <workItem from="1553226472956" duration="14243000" />
       <workItem from="1553472868108" duration="9007000" />
       <workItem from="1553565905451" duration="2677000" />
+      <workItem from="1553754231738" duration="2399000" />
+      <workItem from="1554249886093" duration="997000" />
     </task>
     <task id="LOCAL-00001" summary="增加查看账户功能">
       <created>1496296172663</created>
@@ -1288,7 +1343,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2210695000" />
+    <option name="totallyTimeSpent" value="2232832000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1303,7 +1358,7 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14330874" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17702845" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="设计师" order="3" />
@@ -1326,7 +1381,7 @@
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32882884" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32919955" />
       <window_info anchor="bottom" id="Spring" order="13" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.53258246" side_tool="true" visible="true" weight="0.0065005417" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.53258246" side_tool="true" visible="true" weight="0.0043336945" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="找到" order="16" visible="true" weight="0.32897604" />
       <window_info anchor="bottom" id="Docker" order="17" show_stripe_button="false" />
@@ -1471,13 +1526,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/gd/controllers/user/edit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2700">
-          <caret line="100" column="29" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/gd/controllers/org/people/edit.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1491,21 +1539,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/gd/config/camera/addtbl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/gd/controllers/user/adds.js" />
-    <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/camerajs/addtbl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2860">
-          <caret line="130" column="17" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/camera.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5412">
@@ -1513,31 +1547,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/camerajs/delete.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1166">
-          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tpl/gd/config/camera.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="17" column="21" selection-start-line="10" selection-start-column="15" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/gd/config/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1430">
-          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1550,13 +1563,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tpl/gd/realtime/list.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/gd/controllers/realtime/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="158" column="72" selection-start-line="158" selection-start-column="72" selection-end-line="158" selection-end-column="72" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tpl/gd/face/list.html">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1596,13 +1602,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/config.lazyload.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-990">
-          <caret line="33" column="49" lean-forward="true" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tpl/gd/dashboard.html">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1749,8 +1748,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/gd/controllers/user/addsPic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-149">
-          <caret line="89" column="40" lean-forward="true" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
+        <state relative-caret-position="-476">
+          <caret line="89" column="40" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/modules/ng-grid/ng-grid.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/camerajs/delete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1431">
+          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="33" column="49" lean-forward="true" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/gd/config/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="57" column="18" lean-forward="true" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/gd/config/camera/addtbl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/config/camerajs/addtbl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1113">
+          <caret line="141" column="39" selection-start-line="141" selection-start-column="39" selection-end-line="141" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gd/controllers/realtime/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2376">
+          <caret line="158" column="72" selection-start-line="158" selection-start-column="72" selection-end-line="158" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

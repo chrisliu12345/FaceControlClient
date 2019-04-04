@@ -1,38 +1,20 @@
 /**
  * Created by Administrator on 2018/2/7 0007.
  */
-app.controller('addTblCtrl', function ($scope,$rootScope, $http, $resource, $compile,DTColumnBuilder,DTOptionsBuilder, $state) {
+app.controller('addTblCtrl', function ($scope,$rootScope, $http) {
     var vm=this;
-    $scope.ui=1;
-    /**
-     * datatable参数设置
-     */
-    $scope.dtDataset = [];
-    /**
-     * datatable相关变量
-     */
-        //datatable的api实例变量
-    var myTable;
-    $scope.myTable = false;
-    //手动调用angular数据检查$apply的开关
-    $scope.manual$applyTag = false;
-    //datatable当前页数据（用户）的临时数
-    var tempCurrentPageUser = [];
-    //datatable当前页数据（用户）的数组
-    var currentPageUser = [];
      //摄像机加入到考勤系统
     vm.add=function(index){
         $scope.cameraData={};
-        $scope.cameraData.name=$scope.dtDataset[index].name;
-        $scope.cameraData.IPAddress=$scope.dtDataset[index].IPAddress;
-        $scope.cameraData.ResID=$scope.dtDataset[index].ResID;
+        $scope.cameraData.name=index.name;
+        $scope.cameraData.IPAddress=index.IPAddress;
+        $scope.cameraData.ResID=index.ResID;
         $http({
             method:"POST",
             url:"/ma/camera/addtbl",
             data:$scope.cameraData
         }).success(function(response){
             if(response.code===200){
-                document.getElementById($scope.cameraData.ResID).innerHTML="<p style='color: red'>添加成功</p>";
                 //向CS端发送新增摄像机消息
                 vm.sendCs(response.data);
             }else{
@@ -71,121 +53,102 @@ app.controller('addTblCtrl', function ($scope,$rootScope, $http, $resource, $com
     //初始化设备列表
     $http({
         url: '/ma/camera/tblCamera',
-        method: 'GET'
+        method: 'POST',
+        data:'0'
     }).then(function (result) {
-        console.log("获取到结果");
         $scope.dtDataset = result.data.data;
     }, function (reason) {
 
     });
+   //获取联网平台设备总数
+    $http({
+        url: '/ma/camera/resNum',
+        method: 'GET'
+    }).then(function (result) {
+        $scope.dtCount= result.data;
+    }, function (reason) {
+
+    });
+    layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'element', 'slider'], function(){
+        var laydate = layui.laydate //日期
+            ,laypage = layui.laypage //分页
+            ,layer = layui.layer //弹层
+            ,table = layui.table //表格
+            ,carousel = layui.carousel //轮播
+            ,upload = layui.upload //上传
+            ,element = layui.element //元素操作
+            ,slider = layui.slider //滑块
+        setTimeout(function () {
+            table.render({
+                elem: '#test'
+                , height: 350
+                , data: $scope.dtDataset
+                , cols: [[
+                    {field: 'Address', title: '父设备名称', fixed: 'left'}
+                    , {field: 'name', title: '摄像机名称'},
+                    {field: 'ProtocolType', title: '类型'},
+                    {field: 'IPAddress', title: 'IP地址'},
+                    {field: 'UsrName', title: '用户名'},
+                    {field: 'Password', title: '密码'},
+                    {fixed: 'right', width: 178, align: 'center', toolbar: '#barDemo'}
+                ]]
+            });
+        },200);
 
 
-    $scope.dtOptions = DTOptionsBuilder.newOptions()
-        .withOrder([[1, 'asc']])
-        .withOption('headerCallback', function (header) {
-            if (!$scope.headerCompiled) {
-                // Use this headerCompiled field to only compile header once
-                console.log("header call back");
-                $scope.headerCompiled = true;
-                $compile(header)($scope);
+            table.render({
+                elem: '#test'
+                ,height:350
+                ,data:$scope.dtDataset
+                ,cols: [[
+                    {field:'Address', title:'父设备名称',  fixed: 'left'}
+                    ,{field:'name', title:'摄像机名称'},
+                    {field:'ProtocolType', title:'类型'},
+                    {field:'IPAddress', title:'IP地址'},
+                    {field:'UsrName', title:'用户名'},
+                    {field:'Password', title:'密码'},
+                    {fixed: 'right', width:178, align:'center', toolbar: '#barDemo'}
+                ]]
+            });
+        table.on('tool(demo)', function(obj){
+            var data = obj.data;
+            if(obj.event === 'detail'){
+                vm.add(data);
+                layer.msg('ID：'+ data.ResID + ' 加入成功！');
+               obj.del();
             }
-        })
-        .withOption('fnDrawCallback', function (oSettings) {
-            currentPageUser = tempCurrentPageUser;
-            tempCurrentPageUser = [];
-            if ($scope.manual$applyTag) {
-                /*$scope.$apply();*/
-            }
-        })
-        .withOption('initComplete', function (settings, json) {
-            $scope.manual$applyTag = true;
-            $scope.myTable = true;
-        })
-        .withOption('createdRow', function (row, data, dataIndex) {
-            $compile(row)($scope);
-        })
-        .withOption('fnRowCallback', function (nRow, aData, iDisplayIndex, iDisplayIndexFull) {
-            tempCurrentPageUser.push(aData);
         });
+        //分页
+        setTimeout(function () {
+            laypage.render({
+                elem: 'pageDemo' //分页容器的id
+                ,count: $scope.dtCount //总页数
+                ,skin: '#1E9FFF' //自定义选中色值
+                ,height:350
+                ,jump: function(obj, first){
+                    if(obj.curr===1){
+                        $scope.pageNum='0';
+                    }else{
+                        $scope.pageNum=((obj.curr-1)*10).toString();
+                    }
+                    $http({
+                        url: '/ma/camera/tblCamera',
+                        method: 'POST',
+                        data:$scope.pageNum
+                    }).then(function (result) {
+                        $scope.dtDataNew = result.data.data;
+                        table.reload('test', {
+                            data: $scope.dtDataNew
+                            ,height:350
+                        });
 
-    $scope.dtColumns = [
-        DTColumnBuilder.newColumn('name')
-            .withTitle('摄像机名称'),
-        DTColumnBuilder.newColumn('ProtocolType')
-            .withTitle('类型'),
-        DTColumnBuilder.newColumn('Address')
-            .withTitle('位置'),
-        DTColumnBuilder.newColumn('IPAddress')
-            .withTitle('IP地址'),
-        DTColumnBuilder.newColumn('UsrName')
-            .withTitle('用户名'),
-        DTColumnBuilder.newColumn('Password')
-            .withTitle('密码'),
-        DTColumnBuilder.newColumn(null)
-            .withTitle('操作')
-            .notSortable()
-            .renderWith(function (data, type, full, meta) {
-                var index = $scope.dtDataset.indexOf(data);
-                var index2=data.ResID
-                return '<div id="'+index2+'"><a  type="button" ng-click="showCase.add(' + index + ')" class="btn btn-info btn-xs"><i class="glyphicon glyphicon-plus" tooltip="加入该设备"></i></a>' +
-                '</div>';
-            })
-    ];
+                    }, function (reason) {
+                    });
+                }
+            });
+        },200)
+
+    });
 
 });
-app.filter('highlight', function () {
-    return function (text, search, caseSensitive) {
-        if (search || angular.isNumber(search)) {
-            text = text.toString();
-            search = search.toString();
-            if (caseSensitive) {
-                return text.split(search).join('<span class="ui-match">' + search + '</span>');
-            } else {
-                return text.replace(new RegExp(search, 'gi'), '<span class="ui-match">$&</span>');
-            }
-        } else {
-            return text;
-        }
-    };
-});
 
-/*
-
-function createXMLHttpRequest()
-{
-    if(window.XMLHttpRequest){
-        xmlrequest=new XMLHttpRequest();
-    }
-    else if (window.ActiveXObject){
-        try{
-            xmlrequest=new ActiveXObject("Msxml2.XMLHTTP");
-        }catch (e){
-            try {
-                xmlrequest=new ActiveXObject("Microsoft.XMLHTTP")
-            }
-            catch(e){
-
-            }
-        }
-    }
-}
-function change(urls)
-{
-    createXMLHttpRequest();
-    var url=urls;
-    xmlrequest.onreadystatechange=processReponse;
-    console.log("到我这里了！")
-    xmlrequest.open("GET",url,true);
-    xmlrequest.send(null);
-}
-function processReponse()
-{
-    if(xmlrequest.readyState===4){
-        if(xmlrequest.status===200){
-            console.log("发送到CS端消息成功!");
-        }
-        else{
-            console.log("消息发送失败！");
-        }
-    }
-}*/
